@@ -1,0 +1,97 @@
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #0f0f0f;
+  font-family: 'Helvetica', sans-serif;
+  color: #fff;
+  padding: 36px 0px;
+}
+
+.mobile {
+  width: 100%;
+  padding: 0px 16px;
+}
+
+.content-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 21px 0px;
+}
+
+.live {
+  padding: 16px 0px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.live a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.content-links:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-bottom: 16px;
+  list-style: none;
+}
+
+.links-list li {
+  padding: 0px;
+}
+
+.links-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.content-links::after {
+  content: '';
+  width: 16px;
+  height: 12px;
+  background: url('../../public/assets/images/arrow.svg');
+  background-size: cover;
+  transition: 0.2s;
+}
+
+.content-details[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+.slogan {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.links {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.links a {
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
