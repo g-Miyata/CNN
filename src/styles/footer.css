@@ -95,3 +95,17 @@ footer {
   text-decoration: underline;
   opacity: 1;
 }
+
+.links-menu{
+    margin: 24px 0px;
+    padding: 16px 0px 32px 0px;
+}
+
+.links-menu h4{
+    margin-bottom: 30px;
+}
+
+.links-menu ul{
+    gap: 24px;
+    margin-bottom: 16px
+}
