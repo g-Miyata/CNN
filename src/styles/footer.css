@@ -2,14 +2,23 @@ footer {
   display: flex;
   justify-content: center;
   background-color: #0f0f0f;
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'CNN Sans', sans-serif;
+  font-weight: 400;
   color: #fff;
   padding: 36px 0px;
 }
+.desktop {
+  display: none;
+}
+.main-links-desktop {
+  display: none;
+}
 
-.mobile {
+.footer-container {
   width: 100%;
   padding: 0px 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .content-links {
@@ -23,6 +32,13 @@ footer {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.live-link:hover {
+  cursor: pointer;
+  text-decoration: none !important;
+  color: red;
+  transition: 0s;
 }
 
 .live a {
@@ -72,13 +88,15 @@ footer {
 .slogan {
   font-size: 14px;
   font-weight: bold;
-  margin-top: 16px;
+  margin-bottom: 32px;
 }
 
 .links {
-  margin-top: 24px;
+  margin-top: 16px;
   font-size: 16px;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
 }
 
 .links a {
@@ -96,16 +114,211 @@ footer {
   opacity: 1;
 }
 
-.links-menu{
-    margin: 24px 0px;
-    padding: 16px 0px 32px 0px;
+.links-menu {
+  margin-top: 16px;
+  padding: 16px 0px;
 }
 
-.links-menu h4{
-    margin-bottom: 30px;
+.links-menu h4 {
+  margin-bottom: 30px;
 }
 
-.links-menu ul{
-    gap: 24px;
+.links-menu ul {
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.social-media-links h4 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px;
+}
+
+.inter-icon {
+  width: 24px;
+  height: auto;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.inter-icon:hover {
+  color: #ea7100;
+}
+
+.social-icons i {
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  text-decoration: none;
+}
+
+.twitter:hover {
+  color: #1b95e0;
+}
+
+.facebook:hover {
+  color: #4267b2;
+}
+
+.instagram:hover {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.youtube:hover {
+  color: #ff0000;
+}
+
+.linkedin:hover {
+  color: #0077b5;
+}
+
+.pinterest:hover {
+  color: #e60023;
+}
+
+.tiktok:hover {
+  color: #fe2c55;
+}
+
+.whatsapp:hover {
+  color: #25d366;
+}
+
+.footer-bottom {
+  position: relative;
+  width: 100%;
+}
+
+.footer-bottom hr {
+  position: absolute;
+  width: 100vw;
+  transform: translateX(-4%);
+}
+
+.footer-bottom {
+  position: relative;
+  height: 3px; /* ou o que preferir */
+  background: #0f0f0f;
+  margin-top: 32px;
+  padding: 0px 16px;
+}
+
+.footer-bottom::before,
+.footer-bottom::after {
+  content: '';
+  width: 100vw;
+  height: 1px;
+  display: block;
+  background: #a81d1d;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-bottom::before {
+  top: 0;
+}
+
+.footer-bottom::after {
+  bottom: 0;
+}
+
+.links-info {
+  padding: 32px 0px;
+}
+
+.copyright {
+  font-size: 12px;
+  font-weight: normal;
+  color: #8c8c8c;
+}
+
+@media (min-width: 981px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  .footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  .footer-wrapper {
+    display: flex;
+    gap: 40px;
+  }
+  .main-links-desktop {
+    display: flex;
+    gap: 32px;
+  }
+  .content-links-desktop{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .main-links-mobile {
+    display: none;
+  }
+  .main-links-desktop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+  }
+  .links {
+    margin-top: 0px;
+    max-width: 174px;
+  }
+  .links-list li a {
+    font-size: 14px;
+    line-height: 26px;
+  }
+   .links-list {
+    gap: 0px;
+    padding: 0px;
+  }
+  .links-info ul {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .social-icons i {
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  .social-icons{
     margin-bottom: 16px
+  }
+  .inter-icon {
+    width: 20px;
+  }
+  .links-menu {
+    margin-top: 0px;
+    order: 2;
+  }
+  .social-media-links {
+    order: 1;
+  }
+  .social-media-links h4 {
+    margin-top: 16px;
+  }
+  .links-menu ul {
+    gap: 0px;
+  }
+  .links-menu h4 {
+    margin-bottom: 0px;
+    font-size: 14px;
+  }
+  .slogan{
+    margin-bottom:16px
+  }
 }
