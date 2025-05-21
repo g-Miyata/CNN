@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'CNN Sans';
+  src: url('../../public/assets/fonts/cnn-sans-display-w04-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CNN Sans';
+  src: url('../../public/assets/fonts/cnn-sans-display-w04-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CNN Sans';
+  src: url('../../public/assets/fonts/cnn-sans-display-w04-light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
 
 /* Reset CSS */
 * {
