@@ -1,4 +1,4 @@
-header img{
+header img {
   width: 7.5vh;
 }
 
@@ -33,42 +33,42 @@ header li a {
   transform: translateX(0);
 }
 
-    .slider-wrapper {
-      overflow: hidden;
-      width: 100%;
-      height: 4.5vh;
-      border-right: 1px solid grey;
-    }
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 4.5vh;
+  border-right: 1px solid grey;
+}
 
-    .slider-track {
-      display: flex;
-      white-space: nowrap;
-      animation: scrollLeft 30s linear infinite;
-    }
+.slider-track {
+  display: flex;
+  white-space: nowrap;
+  animation: scrollLeft 30s linear infinite;
+}
 
-    .slide img {
-      width: 780px;     
-    }
+.slide img {
+  width: 780px;
+}
 
-    @keyframes scrollLeft {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
-    }
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 #currency {
-        border-right: 1px solid grey;
-        height: 4.5vh;
+  border-right: 1px solid grey;
+  height: 4.5vh;
 }
 
 #currency img {
-        width: 8rem; 
-        margin-top: 3px;
-        margin-left: 3px;
-        overflow: hidden;
+  width: 8rem;
+  margin-top: 3px;
+  margin-left: 3px;
+  overflow: hidden;
 }
 
 #aside img {
@@ -87,55 +87,48 @@ header li a {
 }
 
 @media (max-width: 1920px) {
-* {
-  margin: 0;
-  padding: 0;
-}
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
-a {
-  color: #000;
-  text-decoration: none;
-  transition: 0.3s;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 10px 0px;
-}
+  a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0px;
+  }
 
-a:hover {
-  display: flex;
-  opacity: 0.7;
-  padding-left: 10px;
-  background-color: #111;
-  color: #fff;  
-  width: 100%;
-}
+  a:hover {
+    display: flex;
+    color: #fff;
+  }
 
+  .nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+  }
 
-.nav-list li {
-  letter-spacing: 3px;
-  margin-left: 32px;
-}
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
 
-.mobile-menu {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
+  body {
+    overflow-x: hidden;
+  }
 
-
-
-body {
-  overflow-x: hidden;
-}
-
-main {
-  background-color: rgba(237, 237, 237, 0.944);
-  height: 35vh;
-}
+  main {
+    background-color: rgba(237, 237, 237, 0.944);
+    height: 35vh;
+  }
 
   .nav-list {
     display: flex;
     list-style: none;
-    padding: 8px 10px ;
+    padding: 8px 10px;
     font-size: 0.6rem;
     position: absolute;
     top: 8vh;
@@ -146,7 +139,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     transform: translateX(-500%);
-    transition: transform 0.1s  ease-in;
+    transition: transform 0.1s ease-in;
     margin-left: 15%;
   }
 
