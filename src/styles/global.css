@@ -28,7 +28,7 @@
 
 /* CSS padrão para largura máxima de trabalho */
 .container{
-    padding: 2rem;
+    padding: 24px;
     width: 100%;
     max-width: 1320px;
     margin: 0 auto;

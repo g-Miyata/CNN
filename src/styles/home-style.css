@@ -1,0 +1,252 @@
+
+.games-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.games {
+  overflow-x: auto;
+  display: flex;
+  scroll-behavior: smooth;
+  gap: 16px;
+  flex-wrap: nowrap;
+}
+
+.game-data {
+  padding-inline: 12px;
+  min-height: 178px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.game-score {
+  list-style: none;
+  white-space: nowrap;
+}
+
+.game-score li {
+  display: inline-flex;
+  width: 90%;
+  padding: 9px 16px 9px 16px;
+  flex-direction: column;
+  border-left: 0.5px solid rgb(192, 190, 190);
+}
+
+.game-score li:first-child {
+  border-left: none;
+  padding-left: 0px;
+}
+
+.score-status {
+  height: 8px;
+  width: 8px;
+  background-color: #ff5c00;
+  border-radius: 50%;
+  position: relative;
+}
+
+.score-status::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #ff5c00;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0.2;
+  }
+  80% {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+  }
+}
+.game-date {
+  padding: 0px 5px;
+  color: #fff;
+  font-weight: 600;
+  background-color: #ff5c00;
+  border-radius: 2px;
+}
+
+.game-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-family: 'CNN Sans', sans-serif;
+  font-weight: 600;
+  color: #464646;
+  padding: 8px 0;
+  border-bottom: 0.5px solid rgb(202, 200, 200);
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  font-family: 'CNN Sans', sans-serif;
+  font-weight: 600;
+  color: #4d4d4d;
+  border-bottom: 0.5px solid rgb(202, 200, 200);
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  gap: 16px;
+}
+
+.game-follow-up {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-family: 'CNN Sans', sans-serif;
+  font-weight: normal;
+  color: #464646;
+  padding: 8px 0;
+}
+.news-wrapper {
+  background-color: #fff;
+  height: auto;
+  font-size: 14px;
+  font-family: 'CNN Sans', sans-serif;
+  margin-top: 10px;
+  padding-top: 32px;
+  position: relative;
+}
+
+.divider{
+    border-bottom: 0.5px solid rgb(175, 175, 175);
+    position: absolute;
+    top: 0; 
+    height: 1px;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.badge {
+  padding: 4px 20px;
+  background-color: #c00;
+  width: fit-content;
+  color: #fff;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.highlights {
+  padding: 0px 24px;
+}
+.highlights h1 {
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  font-size: 16px;
+}
+
+.news-list a {
+  padding: 0;
+  font-family: 'CNN Sans', sans-serif;
+  display: flex;
+  gap: 12px;
+}
+
+.chev-r {
+  font-size: 8px;
+  margin-top: 5px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 12px;
+  height: 12px;
+  background-color: #c00;
+  color: #fff;
+}
+.nav {
+  background: #fafafa;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: light;
+  cursor: pointer;
+  padding: 8px;
+  width: 34px;
+  height: 34px;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.nav.left {
+  left: -20px;
+}
+
+.nav.right {
+  right: -20px;
+}
+
+.divider{
+  display: none;
+}
+
+
+@media (min-width: 991px) {
+  .game-score li {
+    width: 33%;
+  }
+  .divider{
+    display: block;
+  }
+  .news-wrapper {
+    margin-top: 32px;
+  }
+  .highlights{
+    margin-top: 32px;   
+  }
+}
+
+@media (min-width: 1025px) {
+  .games {
+    overflow-x: hidden;
+  }
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .games-wrapper{
+    padding: 0px 24px;
+  }
+  .game-score li {
+    width: 25%;
+  }
+}
