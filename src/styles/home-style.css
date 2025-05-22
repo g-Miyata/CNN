@@ -25,12 +25,13 @@
 .game-score {
   list-style: none;
   white-space: nowrap;
+  width: 1260px
 }
 
 .game-score li {
   display: inline-flex;
   width: 90%;
-  padding: 9px 16px 9px 16px;
+  padding: 8px 16px 8px 16px;
   flex-direction: column;
   border-left: 0.5px solid rgb(192, 190, 190);
 }
@@ -93,7 +94,7 @@
   align-items: center;
   font-size: 12px;
   font-family: 'CNN Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   color: #464646;
   padding: 8px 0;
   border-bottom: 0.5px solid rgb(202, 200, 200);
@@ -103,7 +104,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 22px;
+  font-size: 19px;
   font-family: 'CNN Sans', sans-serif;
   font-weight: 600;
   color: #4d4d4d;
@@ -141,7 +142,7 @@
     position: absolute;
     top: 0; 
     height: 1px;
-    width: 100vw;
+    width: 1320px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -176,6 +177,9 @@
   font-family: 'CNN Sans', sans-serif;
   display: flex;
   gap: 12px;
+}
+.news-list a:hover {
+  text-decoration: underline;
 }
 
 .chev-r {
@@ -247,6 +251,6 @@
     padding: 0px 24px;
   }
   .game-score li {
-    width: 25%;
+    width: 23.8%;
   }
 }
