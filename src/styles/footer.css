@@ -145,6 +145,7 @@ padding: 0px;
   display: flex;
   flex-wrap: wrap;
   gap: 27px;
+  cursor: pointer;
 }
 
 .footer-inter-icon {
