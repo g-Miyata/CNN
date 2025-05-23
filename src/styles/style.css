@@ -101,8 +101,7 @@ header li a {
   }
 
   a:hover {
-    display: flex;
-    color: #fff;
+    text-decoration: underline;
   }
 
   .nav-list li {
