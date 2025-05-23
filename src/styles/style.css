@@ -101,7 +101,7 @@ header li a {
   }
 
   a:hover {
-    display: flex;
+    text-decoration: underline;
   }
 
   .nav-list li {
