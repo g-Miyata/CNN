@@ -1,19 +1,29 @@
 const buttons = document.querySelectorAll('.tab-button');
 const videoContainers = document.querySelectorAll('.video-container');
-const status = document.querySelector('.score-status.live');
 
 function switchTab(tab) {
-  buttons.forEach((btn) => btn.classList.remove('active'));
-  videoContainers.forEach((vc) => (vc.style.display = 'none'));
-  status.classList.remove('active');
+  buttons.forEach((btn) => {
+    btn.classList.remove('active');
+    const status = btn.querySelector('.status-live');
+    if (status) {
+      status.classList.remove('active');
+      void status.offsetWidth;
+    }
+  });
 
-  if (tab === 'brasil') {
-    document.querySelector('.score-status.live').classList.add('active');
-    document.querySelector('.tab-button:nth-child(1)').classList.add('active');
-    document.getElementById('video-brasil').style.display = 'block';
-  } else {
-    document.querySelector('.score-status.live').classList.add('active');
-    document.querySelector('.tab-button:nth-child(2)').classList.add('active');
-    document.getElementById('video-money').style.display = 'block';
+  videoContainers.forEach((vc) => (vc.style.display = 'none'));
+
+  const btn = document.querySelector(`.tab-button.${tab}`);
+  if (btn) {
+    btn.classList.add('active');
+    const status = btn.querySelector('.status-live');
+    if (status) {
+      status.classList.add('active');
+    }
+  }
+
+  const video = document.getElementById(`video-${tab}`);
+  if (video) {
+    video.style.display = 'block';
   }
 }
