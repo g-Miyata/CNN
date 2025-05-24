@@ -461,7 +461,36 @@ a {
 .dot.active {
   background-color: red;
 }
+  #tips{
+    margin-top: 54px;
+  }
+.news-title.dev {
+  font-weight: bold;
+  background: linear-gradient(270deg, #ff0000, #ff9900, #33cc33, #3399ff, #cc33ff, #ff0000);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  animation: gradientFlow 6s ease infinite;
+}
 
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.secondary-article.full{
+  border-bottom: 1px solid rgb(175, 175, 175);
+  font-size: 16px;
+  font-family: 'CNN Sans', sans-serif;
+}
+
+.secondary-news.full article:first-child {
+  border-top: 1px solid rgb(175, 175, 175);
+  margin-top: 32px
+}
 @media (min-width: 991px) {
   .game-score li {
     width: 33%;
@@ -524,7 +553,7 @@ a {
   }
 
   .secondary-article {
-  border-bottom: 1px solid rgb(175, 175, 175);
+  /* border-bottom: 1px solid rgb(175, 175, 175); */
   border-top: 1px solid rgb(175, 175, 175);
   padding: 32px 0px !important;
   }
@@ -551,6 +580,7 @@ a {
     object-fit: cover;
     border-radius: 8px;
     padding: 16px;
+    margin-top: 0px;
   }
   .live-news {
     margin-top: 70px;
@@ -608,14 +638,27 @@ a {
     padding-right: 3px;
   }
     .secondary-article {
-  border-bottom: 1px solid rgb(175, 175, 175);
+  border-bottom:  none;
   border-top: 1px solid rgb(175, 175, 175);
   padding: 32px 0px !important;
   }
   .secondary-news{
     padding-top: 32px;
-    border-bottom: 1px solid rgb(175, 175, 175);
+
     display: flex;
   }
+  .news-2{
+    margin: 0px! important;
+  }
+.secondary-news.full article:first-child {
 
+  margin-top: 0px
+}
+.secondary-news.full{
+  padding-top: 0px;
+display: flex;
+justify-content: space-between;
+}
+
+  
 }
