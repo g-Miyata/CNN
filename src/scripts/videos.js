@@ -1,5 +1,5 @@
 const buttons = document.querySelectorAll('.tab-button');
-const videoContainers = document.querySelectorAll('.video-container');
+const videoContainers = document.querySelectorAll('.video-container.switch');
 const newsTitles = document.querySelectorAll('.news-title');
 
 function switchTab(tab) {

@@ -89,7 +89,7 @@
     <main></main>
     <div class="container">
       <section class="games-wrapper">
-        <button class="nav left" onclick="scrollGames(-1)">←</button>
+        <button class="nav left" onclick="scrollGames(-1)"><i class="fas fa-arrow-left"></i></button>
       <section class="games">
       <section class="game-data">
         <ul class="game-score">
@@ -149,7 +149,7 @@
           </li>
                     <li>
             <div class="game-status">
-              <span>UEFA Europa League 2024/2025</span>
+              <span>Copa do Brasil 2025</span>
               <div class="score-status"></div>
             </div>
          
@@ -420,7 +420,7 @@
         </ul>
       </section>
       </section>
-      <button class="nav right" onclick="scrollGames(1)">→</button>
+      <button class="nav right" onclick="scrollGames(1)"><i class="fas fa-arrow-right"></i></button>
       </section>
       
       <main class="news-wrapper">
@@ -620,10 +620,10 @@
           </button>
           <button class="tab-button money" onclick="switchTab('money')"><span>CNN MONEY</span></button>
         </div>
-        <div id="video-brasil" class="video-container">
+        <div id="video-brasil" class="video-container switch">
           <iframe src="https://www.youtube.com/embed/35gAxaEcmT8" title="CNN Brasil" frameborder="0" allowfullscreen></iframe>
         </div>
-        <div id="video-money" class="video-container" style="display: none;">
+        <div id="video-money" class="video-container switch" style="display: none;">
           <iframe src="https://www.youtube.com/embed/kSLgJGWiUu8" title="CNN Money" frameborder="0" allowfullscreen></iframe>
         </div>
         <p class="news-title brasil">WW - Assista à programação ao vivo da CNN Brasil</p>
@@ -646,36 +646,90 @@
           <div id="tips" class="video-container">
           <iframe src="https://www.youtube.com/embed/NA7x6-Ro4Wg" title="Dicas para programação FullStack" frameborder="0" allowfullscreen></iframe>
         </div>
-      <p class="news-title dev">Aula imperdível: o que estudar para conseguir vaga como dev em 2025</p>
+      <p class="news-title-dev">Aula imperdível: o que estudar para conseguir vaga como dev em 2025</p>
       
           <div id="tips" class="video-container">
           <iframe src="https://www.youtube.com/embed/HZHHBwzmJLk" title="Animações CSS em 100 segundos" frameborder="0" allowfullscreen></iframe>
         </div>
-      <p class="news-title dev">CSS Animation explicado em 100 segundos — rápido e direto!</p>
+      <p class="news-title-dev">CSS Animation explicado em 100 segundos — rápido e direto!</p>
         
         </section>
         
       </main>
       <div class="secondary-news full">
       <article class="secondary-article full">
-        <img src="/public/assets/images/news/news4.gif" alt="noticia 4">
-        <h3>OpenAI lança GPT-4o, modelo mais rápido e com entrada multimodal gratuita</h3>
+        <img src="/public/assets/images/news/news8.png" alt="noticia 4">
+        <h3>Heart intelligence: por que profissionais de TI devem olhar para ela?</h3>
       </article>
       
       <article class="secondary-article full">
-        <img src="/public/assets/images/news/news5.png" alt="noticia 5">
-        <h3>Google anuncia novo sistema operacional para dispositivos de IA: Axion</h3>
+        <img src="/public/assets/images/news/news7.png" alt="noticia 5">
+        <h3>O que você precisa saber antes de migrar de carreira para a área de TI?</h3>
       </article>            
       
       <article class="secondary-article full">
-        <img src="/public/assets/images/news/news6.png" alt="noticia 6">
-        <h3>Meta libera ferramenta open-source para treinamento de grandes modelos de linguagem</h3>
+        <img src="/public/assets/images/news/news9.png" alt="noticia 6">
+        <h3>Salário em dólar sem sair do Brasil: quem são os global workers da tecnologia</h3>
       </article>
       <article class="secondary-article full">
-        <img src="/public/assets/images/news/news4.gif" alt="noticia 4">
-        <h3>OpenAI lança GPT-4o, modelo mais rápido e com entrada multimodal gratuita</h3>
+        <img src="/public/assets/images/news/news10.png" alt="noticia 4">
+        <h3>Está realmente mais difícil preencher as vagas na área de tecnologia?</h3>
       </article>
       </div>
+      <h2 class="dev-title">Desenvolvedores</h2>
+      <div class="developers">
+      <div class="dev-info-container">
+        <img src="/public/assets/images/authors/alessandro.jpg" alt="noticia 4" width="100px" height="100px">
+        <div class="dev-info">
+        <h3>Alessandro Almeida</h3>
+        <div class="dev-socials">
+        <a href="https://www.linkedin.com/in/alessandro-almeida-877684165" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a>
+        <a href="https://github.com/Lordohm" target="_blank"><i class="fab fa-github github"></i></a>
+        </div>
+        </div>
+      </div>
+      <div class="dev-info-container">
+        <img src="/public/assets/images/authors/giarlan.png" alt="noticia 4" width="100px" height="100px">
+        <div class="dev-info">
+        <h3>Giarlan Santana</h3>
+        <div class="dev-socials">
+        <a href="" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a>
+        <a href="" target="_blank"><i class="fab fa-github github"></i></a>
+        </div>
+        </div>
+      </div>
+      <div class="dev-info-container">
+        <img src="/public/assets/images/authors/miyata.jpg" alt="noticia 4" width="100px" height="100px">
+        <div class="dev-info">
+        <h3>Guilherme Miyata</h3>
+        <div class="dev-socials">
+        <a href="https://www.linkedin.com/in/g-miyata/" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a>
+        <a href="https://github.com/g-Miyata" target="_blank"><i class="fab fa-github github"></i></a>
+        </div>
+        </div>
+      </div>
+      <div class="dev-info-container">
+        <img src="/public/assets/images/authors/jefferson.png" alt="noticia 4" width="100px" height="100px">
+        <div class="dev-info">
+        <h3>Jefferson Cabral</h3>
+        <div class="dev-socials">
+        <a href="" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a>
+        <a href="" target="_blank"><i class="fab fa-github github"></i></a>
+        </div>
+        </div>
+      </div>
+      <div class="dev-info-container">
+        <img src="/public/assets/images/authors/marcel.png" alt="noticia 4" width="100px" height="100px">
+        <div class="dev-info">
+        <h3>Marcel Ferreira</h3>
+        <div class="dev-socials">
+        <a href="http://www.linkedin.com/in/marcelfcampos" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a>
+        <a href="https://github.com/marcelfcampos" target="_blank"><i class="fab fa-github github"></i></a>
+        </div>
+        </div>
+      </div>
+      </div>
+      
     </div>
     <footer>
       <div class="footer-container">
@@ -1025,7 +1079,7 @@
       </div>
     </footer>
     <script src="/src/scripts/mobile-navbar.js"></script>
-    <script src="/src/scripts/carousel.js"></script>~
+    <script src="/src/scripts/carousel.js"></script>
     <script src="/src/scripts/videos.js"></script>
   </body>
 </html>
