@@ -90,10 +90,11 @@ ul {
 
 #nav-live a:hover {
     color: white;
-    background-color: red;
+    background: red;
 }
 
-.atual {
+
+#nav-live a:active {
     color: white;
-    background-color: red;
+    background: red;
 }
