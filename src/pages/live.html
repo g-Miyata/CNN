@@ -18,37 +18,41 @@
     <h1>Espaço para simbolizar o header</h1>
   </header>
 
-  <section class="container">
-    <header>
-      <div>
-        <img src="/CNN/public/assets/images/live/logo-video.svg" width="20" height="20" alt="Vídeo logo">
-        <div class="box-title">
-          <h3>Vídeos</h3>
+  <div class="container">
+    <section>
+      <header>
+        <div class="grid-container">
+          <div class="grid-item flex">
+            <img src="/CNN/public/assets/images/live/logo-video.svg" class="size" alt="Vídeo logo">
+            <h3 class="title">Vídeos</h3>
+          </div>
+
+          <form class="flex search-box">
+            <input type="text" id="txtBusca" placeholder="Buscar vídeos">
+            <button>
+              <img src="/CNN/public/assets/images/live/lupa-busca.svg" class="size" id="btnBusca" alt="Buscar">
+            </button>
+          </form>
         </div>
+      </header>
 
-        <form>
-          <input type="text" id="txtBusca" placeholder="Buscar vídeos">
-          <img src="/CNN/public/assets/images/live/lupa-busca.svg" width="20" height="20" id="btnBusca" alt="Buscar">
-        </form>
+      <div class="">
+        <ul id="nav-live" class="flex box">
+          <li><a href="#">Ao Vivo</a></li>
+          <li><a href="#">CNN Esportes</a></li>
+          <li><a href="#">CNN Política</a></li>
+          <li><a href="#">CNN Economia</a></li>
+          <li><a href="#">CNN Money</a></li>
+        </ul>
       </div>
-    </header>
+    </section>
+
     <div>
-      <ul>
-        <li><a href="#">Ao Vivo</a></li>
-        <li><a href="#">CNN Esportes</a></li>
-        <li><a href="#">CNN Política</a></li>
-        <li><a href="#">CNN Economia</a></li>
-        <li><a href="#">CNN Money</a></li>
-      </ul>
+      <h2>Últimas Notícias</h2>
     </div>
-  </section>
 
-  <div>
-    <h2>Últimas Notícias</h2>
+
   </div>
-
-
-
   <footer>
     <div class="footer-container">
       <section class="footer-wrapper">

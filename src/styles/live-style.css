@@ -1,0 +1,99 @@
+body {
+    font-family: 'CNN Sans';
+}
+
+form>button {
+    border-radius: 9999px;
+    border-width: 0;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+.grid-item {
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-end {
+    align-self: self-end;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.search-box {
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px 12px;
+    width: 1fr;
+
+}
+
+.box a {
+    background: transparent;
+    outline: none;
+    width: 100%;
+    font-size: 1em;
+    color: #a7a6a6;
+}
+
+.search-box input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    font-size: 1em;
+    color: #333;
+}
+
+.search-box button:hover {
+    background: #adadad;
+}
+
+.size {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#nav-live {
+    margin: 1.5rem 0;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+
+#nav-live a {
+    text-decoration: none;
+    border: 1px solid #b3b3b3;
+    border-radius: 6px;
+    padding: 0.3rem 1rem;
+}
+
+#nav-live a:hover {
+    color: white;
+    background-color: red;
+}
+
+.atual {
+    color: white;
+    background-color: red;
+}
