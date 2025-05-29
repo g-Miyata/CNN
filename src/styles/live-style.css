@@ -32,10 +32,6 @@ ul {
     display: flex;
 }
 
-.flex-end {
-    align-self: self-end;
-}
-
 .title {
     font-weight: 700;
     font-size: 1.5rem;
@@ -50,14 +46,6 @@ ul {
     padding: 8px 12px;
     width: 1fr;
 
-}
-
-.box a {
-    background: transparent;
-    outline: none;
-    width: 100%;
-    font-size: 1em;
-    color: #a7a6a6;
 }
 
 .search-box input {
@@ -80,7 +68,7 @@ ul {
 
 /* Navegação da área conteúdo */
 
-nav button {
+nav>button {
     background: white;
     color: #c4c2c2;
     border: 1px solid #c4c2c2;
@@ -107,7 +95,7 @@ main {
 
 .video-section {
     flex: 3;
-    margin-right: 1rem;
+    margin: 1rem;
 }
 
 .video-section iframe {
