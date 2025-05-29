@@ -36,14 +36,49 @@
         </div>
       </header>
 
+      <nav id="">
+        <button class="tab-button active" data-video="https://www.youtube.com/embed/ScMzIvxBSi4">Ao Vivo</button>
+        <button class="tab-button" data-video="https://www.youtube.com/embed/kXYiU_JCYtU">CNN Esportes</button>
+        <button class="tab-button" data-video="https://www.youtube.com/embed/tgbNymZ7vqY">CNN Política</button>
+        <button class="tab-button" data-video="https://www.youtube.com/embed/jfKfPfyJRdk">CNN Economia</button>
+        <button class="tab-button" data-video="https://www.youtube.com/embed/jfKfPfyJRdk">CNN Money</button>
+      </nav>
       <div class="">
-        <ul id="nav-live" class="flex box">
+
+        <main>
+          <section class="video-section">
+            <iframe id="main-video" src="https://www.youtube.com/embed/ScMzIvxBSi4" frameborder="0"
+              allowfullscreen></iframe>
+            <div class="video-info">
+              <h2>CNN 360º</h2>
+              <p>Todos os ângulos das notícias mais importantes do dia com atualizações, debates e apurações em tempo
+                real.</p>
+              <p><strong>Apresentação:</strong> Débora Bergamasco e Iuri Pitta</p>
+              <p><strong>Seg - Sex:</strong> 15h</p>
+            </div>
+          </section>
+
+          <aside class="sidebar">
+            <h3>Últimas Notícias</h3>
+            <ul>
+              <li><a href="https://www.youtube.com/embed/ScMzIvxBSi4" target="main-video">Análise: Planalto evita
+                  “carapuça”...</a></li>
+              <li><a href="https://www.youtube.com/embed/kXYiU_JCYtU" target="main-video">Trump intensifica críticas a
+                  Putin</a></li>
+              <li><a href="https://www.youtube.com/embed/tgbNymZ7vqY" target="main-video">Pinguins retornam ao mar</a>
+              </li>
+              <li><a href="https://www.youtube.com/embed/jfKfPfyJRdk" target="main-video">EUA anunciam sanções</a></li>
+            </ul>
+          </aside>
+        </main>
+
+        <!-- <ul id="nav-live" class="flex box">
           <li class="atual"><a href="">Ao Vivo</a></li>
           <li><a href="">CNN Esportes</a></li>
           <li><a href="">CNN Política</a></li>
           <li><a href="">CNN Economia</a></li>
           <li><a href="">CNN Money</a></li>
-        </ul>
+        </ul> -->
       </div>
     </section>
 
@@ -400,6 +435,8 @@
 
     </div>
   </footer>
+  <script src="/src/scripts/live-navbar.js"></script>
+
 </body>
 
 </html>
