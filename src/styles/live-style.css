@@ -19,8 +19,15 @@ ul {
     gap: 20px;
 }
 
+.description-video {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
 
 .grid-item {
+    padding: px;
     align-items: center;
 }
 
@@ -91,6 +98,10 @@ nav button:hover {
 main {
     display: flex;
     padding: 2rem;
+}
+
+.video-box {
+    padding: 1.5rem 1.5rem 0 0;
 }
 
 .video-section {
