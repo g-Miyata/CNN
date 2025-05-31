@@ -5,9 +5,9 @@ header {
   align-items: center;
   background: #000000;
   height: 7vh;
-  position: fixed; 
-  width: 100%; 
-  z-index: 1000; 
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
   top: 0;
 }
 
@@ -34,7 +34,6 @@ header img {
   line-height: 1rem;
 }
 
-
 .led-wrapper {
   position: relative;
   width: 18px;
@@ -46,8 +45,8 @@ header img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 3px;
-  height: 3px;
+  width: 8px;
+  height: 8px;
   background-color: red;
   border-radius: 50%;
   transform: translate(-50%, -50%);
@@ -57,8 +56,8 @@ header img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 2px;
-  height: 2px;
+  width: 6px;
+  height: 6px;
   background-color: red;
   border-radius: 50%;
   transform: translate(-50%, -50%);
@@ -94,7 +93,6 @@ header img {
   font-size: 0.4rem;
 }
 
-
 .form-container {
   display: flex;
   width: 200px;
@@ -103,9 +101,9 @@ header img {
 }
 
 .form-container form::after {
-  content: "|";
+  content: '|';
   color: #fff;
-  font-size: 12px;  
+  font-size: 12px;
 }
 
 .form-container form label {
@@ -123,7 +121,6 @@ header img {
   cursor: pointer;
 }
 
-
 .form-container a img {
   width: 10px;
   height: 10px;
@@ -131,7 +128,6 @@ header img {
   margin-left: 5px;
   margin-top: 2px;
 }
-
 
 .search-form {
   position: relative;
@@ -141,7 +137,6 @@ header img {
   margin-right: 4px;
 }
 
-
 .search-form label img {
   width: 14px;
   height: 14px;
@@ -150,9 +145,9 @@ header img {
 }
 
 .search-input {
-  width: 150px; 
+  width: 150px;
   height: 1rem;
-  max-width: 0; 
+  max-width: 0;
   opacity: 0;
   padding: 8px;
   border: 1px solid transparent;
@@ -164,7 +159,7 @@ header img {
 }
 
 #toggle-search {
-  display: none; 
+  display: none;
 }
 
 #toggle-search:checked ~ .search-input {
@@ -178,9 +173,6 @@ header img {
 }
 
 /*END HEADER */
-
-
-
 
 /*Carousel Container*/
 
@@ -209,7 +201,6 @@ header img {
 .slide img {
   width: 28rem;
 }
-
 
 @keyframes scrollLeft {
   0% {
@@ -264,13 +255,16 @@ header img {
     padding: 0;
   }
 
-   .header-menu a {
+  .header-menu a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px 0px;
   }
+  .header-menu li a {
+    font-size: 1rem;
+  }
 
-  .header-menu  a:hover {
+  .header-menu a:hover {
     border-bottom: 2px solid red;
     padding-bottom: 6px;
   }
@@ -326,7 +320,6 @@ header img {
     margin-left: 0;
     opacity: 0;
   }
-
 }
 
 .nav-list.active {
