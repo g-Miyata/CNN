@@ -12,6 +12,10 @@ ul {
     list-style: none;
 }
 
+picture>img {
+    margin-right: 1rem;
+}
+
 
 .grid-container {
     display: grid;
@@ -21,8 +25,8 @@ ul {
 
 .description-video {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
 }
 
 
@@ -31,12 +35,22 @@ ul {
     align-items: center;
 }
 
+picture.grid-item {
+    /* align-items: flex-start; */
+    margin-left: 0;
+}
+
 .header-main {
     padding: 0 0 2rem;
 }
 
 .flex {
     display: flex;
+}
+
+.flex-end {
+    flex-direction: row;
+    align-items: center;
 }
 
 .title {
