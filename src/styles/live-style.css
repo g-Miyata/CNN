@@ -16,6 +16,10 @@ picture>img {
     margin-right: 1rem;
 }
 
+div.video-info p {
+    padding-top: 0.8rem;
+}
+
 
 .grid-container {
     display: grid;
