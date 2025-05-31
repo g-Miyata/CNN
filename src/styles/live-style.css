@@ -12,6 +12,14 @@ ul {
     list-style: none;
 }
 
+picture>img {
+    margin-right: 1rem;
+}
+
+div.video-info p {
+    padding-top: 0.8rem;
+}
+
 
 .grid-container {
     display: grid;
@@ -19,9 +27,21 @@ ul {
     gap: 20px;
 }
 
+.description-video {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
 
 .grid-item {
+    padding: px;
     align-items: center;
+}
+
+picture.grid-item {
+    /* align-items: flex-start; */
+    margin-left: 0;
 }
 
 .header-main {
@@ -30,6 +50,11 @@ ul {
 
 .flex {
     display: flex;
+}
+
+.flex-end {
+    flex-direction: row;
+    align-items: center;
 }
 
 .title {
@@ -91,6 +116,10 @@ nav button:hover {
 main {
     display: flex;
     padding: 2rem;
+}
+
+.video-box {
+    padding: 1.5rem 1.5rem 0 0;
 }
 
 .video-section {
