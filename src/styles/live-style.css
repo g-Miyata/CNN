@@ -27,6 +27,11 @@ div.video-info p {
     gap: 20px;
 }
 
+.grid-container>div {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .description-video {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -125,6 +130,7 @@ main {
 .video-section {
     flex: 3;
     margin: 1rem;
+    max-width: 60%;
 }
 
 .video-section iframe {
@@ -139,6 +145,18 @@ main {
     margin-top: 10px;
     background: white;
     padding: 15px;
+    border-radius: 8px;
+}
+
+section.video-info {
+    gap: 1rem;
+}
+
+
+
+.video-config {
+    width: 350px;
+    height: 200px;
     border-radius: 8px;
 }
 
@@ -169,11 +187,37 @@ main {
 }
 
 .scroll {
-    display: flex;
+    /* display: flex; */
     gap: 8px;
     overflow-x: auto;
     white-space: nowrap;
     padding: 8px
+}
+
+.scroll-button {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 5px;
+    border: 0;
+    border-radius: 99999px;
+}
+
+button.scroll-button:hover {
+    background: lightgray;
+}
+
+#nav-container {
+    display: flex;
+    overflow: hidden;
+    width: auto;
+    border: 1px solid #ccc;
+    /* scroll suave para todos os scrolls manuais */
+    scroll-behavior: smooth;
+}
+
+.item {
+    justify-content: center;
+    flex-shrink: 1;
 }
 
 @media (max-width: 640px) {
