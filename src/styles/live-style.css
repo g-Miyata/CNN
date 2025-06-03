@@ -27,7 +27,7 @@ div.video-info p {
     gap: 20px;
 }
 
-.grid-container>div {
+.grid-container>h1+div {
     display: flex;
     justify-content: flex-end;
 }
