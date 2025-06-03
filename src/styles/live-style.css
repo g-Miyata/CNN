@@ -118,6 +118,10 @@ nav button:hover {
     color: white;
 }
 
+nav.grid-container {
+    margin: 1.5rem 0;
+}
+
 main {
     display: flex;
     padding: 2rem;
@@ -206,11 +210,13 @@ button.scroll-button:hover {
     background: lightgray;
 }
 
-#nav-container {
+.nav-container {
     display: flex;
     overflow: hidden;
     width: auto;
     border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
     /* scroll suave para todos os scrolls manuais */
     scroll-behavior: smooth;
 }
@@ -218,6 +224,7 @@ button.scroll-button:hover {
 .item {
     justify-content: center;
     flex-shrink: 1;
+    margin-right: 0.5rem;
 }
 
 @media (max-width: 640px) {

@@ -1,30 +1,31 @@
-  const container = document.getElementById('nav-container');
-  const items = container.querySelectorAll('.item');
-  let indexAtual = 0;
+  document.querySelectorAll('.wrapper').forEach(wrapper => {
+    const container = wrapper.querySelector('.nav-container');
+    const items = container.querySelectorAll('.item');
+    const botaoProximo = wrapper.querySelector('.botaoProximo');
+    const botaoAnterior = wrapper.querySelector('.botaoAnterior');
 
-  const botaoProximo = document.getElementById('botaoProximo');
-  const botaoAnterior = document.getElementById('botaoAnterior');
+    let indexAtual = 0;
+    const itemWidth = items[0].offsetWidth + 20;
 
-  const itemWidth = items[0].offsetWidth + 20; 
-
-  botaoProximo.addEventListener('click', () => {
-    indexAtual++;
-    if (indexAtual >= items.length) {
-      indexAtual = 0; // volta para o começo
-    }
-    container.scrollTo({
-      left: itemWidth * indexAtual,
-      behavior: 'smooth'
+    botaoProximo.addEventListener('click', () => {
+      indexAtual++;
+      if (indexAtual >= items.length) {
+        indexAtual = 0;
+      }
+      container.scrollTo({
+        left: itemWidth * indexAtual,
+        behavior: 'smooth'
+      });
     });
-  });
 
-  botaoAnterior.addEventListener('click', () => {
-    indexAtual--;
-    if (indexAtual < 0) {
-      indexAtual = items.length - 1; // volta para o final
-    }
-    container.scrollTo({
-      left: itemWidth * indexAtual,
-      behavior: 'smooth'
+    botaoAnterior.addEventListener('click', () => {
+      indexAtual--;
+      if (indexAtual < 0) {
+        indexAtual = items.length - 1;
+      }
+      container.scrollTo({
+        left: itemWidth * indexAtual,
+        behavior: 'smooth'
+      });
     });
   });
