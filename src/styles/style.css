@@ -359,7 +359,7 @@ body {
 /* FIM DO MOBILE-MENU*/
 
 
-@media (max-width: 1920px) {
+
   * {
     margin: 0;
     padding: 0;
@@ -482,7 +482,7 @@ body {
       opacity: 0;
     }
 
-  }
+  
 
 
 .nav-list.active {
