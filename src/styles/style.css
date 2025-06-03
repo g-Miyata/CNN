@@ -1,5 +1,5 @@
-/*INÍCIO DO HEADER */
-header {
+/*INÍCIO DO .global-header */
+.global-header {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -20,7 +20,7 @@ header {
 }
 
 
-header img {
+.global-header img {
   height: 7vh;
   justify-content: flex-end;
 }
