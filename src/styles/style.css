@@ -1,5 +1,5 @@
-/*INÍCIO DO HEADER */
-header {
+/*INÍCIO DO .global-header */
+.global-header {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -20,7 +20,7 @@ header {
 }
 
 
-header img {
+.global-header img {
   height: 7vh;
   justify-content: flex-end;
 }
@@ -162,8 +162,7 @@ header img {
   border-radius: 2px;
   transition: max-width 1s ease, opacity 1s ease, border-color 0.3s ease;
   overflow: hidden;
-  font-size: 6px;
-  font-weight: 550;
+  font-size: 16px;
 }
 
 #toggle-search {
