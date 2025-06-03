@@ -15,26 +15,20 @@
   </head>
 
   <body>
+    <!--INÍCIO DO HEADER + MENU SUSPENSO-->
     <header>
-      <div class="first-element-group">
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <img src="/public/assets/logo-images/logo-cnn.png" alt="logo cnn" />
-      </div>
-      
+      <img src="/public/assets/logo-images/logo-cnn.png" alt="logo cnn" />
+     
 
       <ul class="header-menu">
         <div class="live-indicator">
-            <div class="led-wrapper">
+          <div class="led-wrapper">
             <div class="led-glow"></div>
             <div class="led-core"></div>
           </div>    
+          <li><a href="/src/pages/live.html">Ao vivo</a></li>
         </div>
 
-        <li><a href="/src/pages/live.html">Ao vivo</a></li>
         <li><a href="/src/pages/policy.html">Política</a></li>
         <li><a href="/">WW</a></li>
         <li><a href="">Economia</a></li>
@@ -51,17 +45,18 @@
         </form>
         <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?as=L78iYkbVftFCNKLEJfnsMCz-TuRrBR765XIBzfCw4wk&client_id=259226150264-05h2krjig2oa4qkm7ivjb8plrivd04qq.apps.googleusercontent.com&scope=openid%20email%20profile&response_type=id_token&gsiwebsdk=gis_attributes&redirect_uri=https%3A%2F%2Fwww.cnnbrasil.com.br&response_mode=form_post&origin=https%3A%2F%2Fwww.cnnbrasil.com.br&display=popup&prompt=select_account&gis_params=ChxodHRwczovL3d3dy5jbm5icmFzaWwuY29tLmJyEhxodHRwczovL3d3dy5jbm5icmFzaWwuY29tLmJyGAcqK0w3OGlZa2JWZnRGQ05LTEVKZm5zTUN6LVR1UnJCUjc2NVhJQnpmQ3c0d2sySDI1OTIyNjE1MDI2NC0wNWgya3JqaWcyb2E0cWttN2l2amI4cGxyaXZkMDRxcS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbTgBQkBmNzlhYTQ3YmE2ODdmYzVkZTUxZjJjNTYxNWYwMzBkYTQxY2Q3YzVkNTA4ZTIyZGY0OGE4NjNkMDY5NmMwN2Ni&service=lso&o2v=1&flowName=GeneralOAuthFlow" target="_blank"><img src="/public/assets/logo-images/google-logo.png" alt="logo google"/></a>
         
-      </div>
-            
+      </div>            
     </header>
+
+    <!-- Início do Container do Carrossel-->
     <div class="main-container">
       <div class="slider-wrapper">
         <div class="slider-track">
-          <div class="slide"><img src="/public/assets/images/backgrounds/C1.PNG" alt="" /></div>
-          <div class="slide"><img src="/public/assets/images/backgrounds/C2.PNG" alt="" /></div>
-          <div class="slide"><img src="/public/assets/images/backgrounds/C3.PNG" alt="" /></div>
-          <div class="slide"><img src="/public/assets/images/backgrounds/C4.PNG" alt="" /></div>
-          <div class="slide"><img src="/public/assets/images/backgrounds/C5.PNG" alt="" /></div>
+          <div class="carousel-slide"><img src="/public/assets/images/backgrounds/C1.PNG" alt="" /></div>
+          <div class="carousel-slide"><img src="/public/assets/images/backgrounds/C2.PNG" alt="" /></div>
+          <div class="carousel-slide"><img src="/public/assets/images/backgrounds/C3.PNG" alt="" /></div>
+          <div class="carousel-slide"><img src="/public/assets/images/backgrounds/C4.PNG" alt="" /></div>
+          <div class="carousel-slide"><img src="/public/assets/images/backgrounds/C5.PNG" alt="" /></div>
         </div>
       </div>
 
@@ -73,14 +68,27 @@
         <img src="/public/assets/images/backgrounds/aside-image.PNG" alt="" />
       </div>
     </div>
+    <!-- Fim do Container do Carrossel-->
 
-    <div class="nav-bar">
-      <nav>
-        <ul class="nav-list">
-          <li><a href="/">Política</a></li>
+    <!-- Início Menú suspenso-->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+    <div class="menu-container">
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="overlay"></div>
+
+    <nav class="menu">
+      <ul>
+          <li><a href="/src/pages/policy.html">Política</a></li>
           <li><a href="/">Internacional</a></li>
           <li><a href="/">Nacional</a></li>
-          <li><a href="/">Esportes</a></li>
+          <li><a href="/src/pages/sports.html">Esportes</a></li>
           <li><a href="/">Economia</a></li>
           <li><a href="/">CNN Money</a></li>
           <li><a href="/">COP 30</a></li>
@@ -104,14 +112,26 @@
           <li><a href="/">Fale com a CNN</a></li>
           <li><a href="/">Distribuição do Sinal</a></li>
           <li><a href="/">Faça parte da Equipe CNN</a></li>
-        </ul>
-      </nav>
-    </div>
-    <main>
-      <div class="ads-container">
-        <img src="/public/assets/images/backgrounds/Imagem4.png" alt="">
+      </ul>
+    </nav>
+    <!-- Início Menú suspenso-->
+    <!--FIM DO HEADER + MENU SUSPENSO-->
+
+    <div class="ads-container">
+      <div class="ads">
+        <div class="slider">
+          <a href="https://www.cnnbrasil.com.br/ww/">
+           <img src="/public/assets/images/ads/11.PNG" alt="Image 1">
+          </a>
+          <a href="https://codans.com.br/android-matricula/">
+            <img src="/public/assets/images/ads/22.png" alt="Image 2">
+          </a>
+          <a href="https://example.com/page3">
+            <img src="/public/assets/images/ads/33.PNG" alt="Image 3">
+          </a>
+        </div>
       </div>
-    </main>
+    </div>
 
     <div class="container">
       <section class="games-wrapper">
@@ -761,7 +781,7 @@
       <div class="footer-container">
         <section class="footer-wrapper">
           <div>
-        <a href="./index.html"><img src="../../public/assets/logo-image/logo-cnn.png" alt="logo CNN" width="66px" /></a>
+        <a href="./index.html"><img src="../../public/assets/logo-images/logo-cnn.png" alt="logo CNN" width="66px" /></a>
         </div>
 
         <section class="footer-links">
