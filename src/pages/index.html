@@ -1,665 +1,699 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/home-style.css" />
-    <link rel="stylesheet" href="../styles/footer.css" />
-    <link rel="stylesheet" href="../styles/global.css" />
-    <link rel="icon" href="../../public/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <title>CNN Brasil | Notícias Ao Vivo do Brasil e do Mundo</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/home-style.css" />
+  <link rel="stylesheet" href="../styles/footer.css" />
+  <link rel="stylesheet" href="../styles/global.css" />
+  <link rel="icon" href="../../public/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <body>
-    <!--INÍCIO DO HEADER + MENU SUSPENSO-->
-    <header class="global-header">
-      <img src="/public/assets/logo-images/logo-cnn.png" alt="logo cnn" />
-     
+  <title>CNN Brasil | Notícias Ao Vivo do Brasil e do Mundo</title>
+</head>
 
-      <ul class="header-menu">
-        <div class="live-indicator">
-          <div class="led-wrapper">
-            <div class="led-glow"></div>
-            <div class="led-core"></div>
-          </div>    
-          <li><a href="/src/pages/live.html">Ao vivo</a></li>
+<body>
+  <!--INÍCIO DO HEADER + MENU SUSPENSO-->
+  <header class="global-header">
+    <a href="/src/pages/index.html"><img src="/public/assets/logo-images/logo-cnn.png" alt="logo cnn" /></a>
+
+
+    <ul class="header-menu">
+      <div class="live-indicator">
+        <div class="led-wrapper">
+          <div class="led-glow"></div>
+          <div class="led-core"></div>
         </div>
-
-        <li><a href="/src/pages/policy.html">Política</a></li>
-        <li><a href="/">WW</a></li>
-        <li><a href="">Economia</a></li>
-        <li><a href="/src/pages/sports.html">Esportes</a></li>
-        <li><a href="">Pop</a></li>
-        <li><a href="Viagens & Gastronomia">Viagem & Gastronomia</a></li>
-      </ul>
-
-      <div class="form-container">
-        <form class="search-form" action="/" method="GET">
-          <input type="checkbox" id="toggle-search">
-          <input type="text" class="search-input" name="q" placeholder="Buscar...">
-          <label for="toggle-search" ><img src="/public/assets/searching-image/lupa3.png" alt=""></label>
-        </form>
-        <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?as=L78iYkbVftFCNKLEJfnsMCz-TuRrBR765XIBzfCw4wk&client_id=259226150264-05h2krjig2oa4qkm7ivjb8plrivd04qq.apps.googleusercontent.com&scope=openid%20email%20profile&response_type=id_token&gsiwebsdk=gis_attributes&redirect_uri=https%3A%2F%2Fwww.cnnbrasil.com.br&response_mode=form_post&origin=https%3A%2F%2Fwww.cnnbrasil.com.br&display=popup&prompt=select_account&gis_params=ChxodHRwczovL3d3dy5jbm5icmFzaWwuY29tLmJyEhxodHRwczovL3d3dy5jbm5icmFzaWwuY29tLmJyGAcqK0w3OGlZa2JWZnRGQ05LTEVKZm5zTUN6LVR1UnJCUjc2NVhJQnpmQ3c0d2sySDI1OTIyNjE1MDI2NC0wNWgya3JqaWcyb2E0cWttN2l2amI4cGxyaXZkMDRxcS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbTgBQkBmNzlhYTQ3YmE2ODdmYzVkZTUxZjJjNTYxNWYwMzBkYTQxY2Q3YzVkNTA4ZTIyZGY0OGE4NjNkMDY5NmMwN2Ni&service=lso&o2v=1&flowName=GeneralOAuthFlow" target="_blank"><img src="/public/assets/logo-images/google-logo.png" alt="logo google"/></a>
-        
-      </div>            
-    </header>
-
-    <!-- Início do Container do Carrossel-->
-    <div class="main-container">
-      <div class="slider-wrapper">
-        <div class="slider-track">
-          <div class="carousel-slide"><img src="/public/assets/images/backgrounds/C1.PNG" alt="" /></div>
-          <div class="carousel-slide"><img src="/public/assets/images/backgrounds/C2.PNG" alt="" /></div>
-          <div class="carousel-slide"><img src="/public/assets/images/backgrounds/C3.PNG" alt="" /></div>
-          <div class="carousel-slide"><img src="/public/assets/images/backgrounds/C4.PNG" alt="" /></div>
-          <div class="carousel-slide"><img src="/public/assets/images/backgrounds/C5.PNG" alt="" /></div>
-        </div>
+        <li><a href="/src/pages/live.html">Ao vivo</a></li>
       </div>
 
-      <div id="currency">
-        <img src="/public/assets/images/backgrounds/currency.PNG" alt="" />
-      </div>
+      <li><a href="/src/pages/policy.html">Política</a></li>
+      <li><a href="/">WW</a></li>
+      <li><a href="">Economia</a></li>
+      <li><a href="/src/pages/sports.html">Esportes</a></li>
+      <li><a href="">Pop</a></li>
+      <li><a href="Viagens & Gastronomia">Viagem & Gastronomia</a></li>
+    </ul>
 
-      <div id="aside">
-        <img src="/public/assets/images/backgrounds/aside-image.PNG" alt="" />
-      </div>
+    <div class="form-container">
+      <form class="search-form" action="/" method="GET">
+        <input type="checkbox" id="toggle-search">
+        <input type="text" class="search-input" name="q" placeholder="Buscar...">
+        <label for="toggle-search"><img src="/public/assets/searching-image/lupa3.png" alt=""></label>
+      </form>
+      <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?as=L78iYkbVftFCNKLEJfnsMCz-TuRrBR765XIBzfCw4wk&client_id=259226150264-05h2krjig2oa4qkm7ivjb8plrivd04qq.apps.googleusercontent.com&scope=openid%20email%20profile&response_type=id_token&gsiwebsdk=gis_attributes&redirect_uri=https%3A%2F%2Fwww.cnnbrasil.com.br&response_mode=form_post&origin=https%3A%2F%2Fwww.cnnbrasil.com.br&display=popup&prompt=select_account&gis_params=ChxodHRwczovL3d3dy5jbm5icmFzaWwuY29tLmJyEhxodHRwczovL3d3dy5jbm5icmFzaWwuY29tLmJyGAcqK0w3OGlZa2JWZnRGQ05LTEVKZm5zTUN6LVR1UnJCUjc2NVhJQnpmQ3c0d2sySDI1OTIyNjE1MDI2NC0wNWgya3JqaWcyb2E0cWttN2l2amI4cGxyaXZkMDRxcS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbTgBQkBmNzlhYTQ3YmE2ODdmYzVkZTUxZjJjNTYxNWYwMzBkYTQxY2Q3YzVkNTA4ZTIyZGY0OGE4NjNkMDY5NmMwN2Ni&service=lso&o2v=1&flowName=GeneralOAuthFlow"
+        target="_blank"><img src="/public/assets/logo-images/google-logo.png" alt="logo google" /></a>
+
     </div>
-    <!-- Fim do Container do Carrossel-->
+  </header>
 
-    <!-- Início Menú suspenso-->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-
-    <div class="menu-container">
-      <label for="menu-toggle" class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
-
-    <div class="overlay"></div>
-
-    <nav class="menu">
-      <ul>
-          <li><a href="/src/pages/policy.html">Política</a></li>
-          <li><a href="/">Internacional</a></li>
-          <li><a href="/">Nacional</a></li>
-          <li><a href="/src/pages/sports.html">Esportes</a></li>
-          <li><a href="/">Economia</a></li>
-          <li><a href="/">CNN Money</a></li>
-          <li><a href="/">COP 30</a></li>
-          <li><a href="/">Entretenimento</a></li>
-          <li><a href="/">Saúde</a></li>
-          <li><a href="/">Tecnologia</a></li>
-          <li><a href="/">Lifestyle</a></li>
-          <li><a href="/">Viagem & Gastronomia</a></li>
-          <li><a href="/">Auto</a></li>
-          <li><a href="/">Educação</a></li>
-          <li><a href="/">CNN Talks</a></li>
-          <li><a href="/">Fórum CNN</a></li>
-          <li><a href="/">Blogs CNN</a></li>
-          <li><a href="/">Colunas CNN</a></li>
-          <li><a href="/">Programação</a></li>
-          <li><a href="/">Equipes CNN Brasil</a></li>
-          <li><a href="/">Newsletters</a></li>
-          <li><a href="/">Sobre a CNN</a></li>
-          <li><a href="/">Política de Privacidade</a></li>
-          <li><a href="/">Termos de Uso</a></li>
-          <li><a href="/">Fale com a CNN</a></li>
-          <li><a href="/">Distribuição do Sinal</a></li>
-          <li><a href="/">Faça parte da Equipe CNN</a></li>
-      </ul>
-    </nav>
-    <!-- Início Menú suspenso-->
-    <!--FIM DO HEADER + MENU SUSPENSO-->
-
-    <div class="ads-container">
-      <div class="ads">
-        <div class="slider">
-          <a href="https://www.cnnbrasil.com.br/ww/">
-           <img src="/public/assets/images/ads/11.PNG" alt="Image 1">
-          </a>
-          <a href="https://codans.com.br/android-matricula/">
-            <img src="/public/assets/images/ads/22.png" alt="Image 2">
-          </a>
-          <a href="https://example.com/page3">
-            <img src="/public/assets/images/ads/33.PNG" alt="Image 3">
-          </a>
-        </div>
+  <!-- Início do Container do Carrossel-->
+  <div class="main-container">
+    <div class="slider-wrapper">
+      <div class="slider-track">
+        <div class="carousel-slide"><img src="/public/assets/images/backgrounds/C1.PNG" alt="" /></div>
+        <div class="carousel-slide"><img src="/public/assets/images/backgrounds/C2.PNG" alt="" /></div>
+        <div class="carousel-slide"><img src="/public/assets/images/backgrounds/C3.PNG" alt="" /></div>
+        <div class="carousel-slide"><img src="/public/assets/images/backgrounds/C4.PNG" alt="" /></div>
+        <div class="carousel-slide"><img src="/public/assets/images/backgrounds/C5.PNG" alt="" /></div>
       </div>
     </div>
 
-    <div class="container">
-      <section class="games-wrapper">
-        <button class="nav left" onclick="scrollGames(-1)"><i class="fas fa-arrow-left"></i></button>
+    <div id="currency">
+      <img src="/public/assets/images/backgrounds/currency.PNG" alt="" />
+    </div>
+
+    <div id="aside">
+      <img src="/public/assets/images/backgrounds/aside-image.PNG" alt="" />
+    </div>
+  </div>
+  <!-- Fim do Container do Carrossel-->
+
+  <!-- Início Menú suspenso-->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+  <div class="menu-container">
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+
+  <div class="overlay"></div>
+
+  <nav class="menu">
+    <ul>
+      <li><a href="/src/pages/policy.html">Política</a></li>
+      <li><a href="/">Internacional</a></li>
+      <li><a href="/">Nacional</a></li>
+      <li><a href="/src/pages/sports.html">Esportes</a></li>
+      <li><a href="/">Economia</a></li>
+      <li><a href="/">CNN Money</a></li>
+      <li><a href="/">COP 30</a></li>
+      <li><a href="/">Entretenimento</a></li>
+      <li><a href="/">Saúde</a></li>
+      <li><a href="/">Tecnologia</a></li>
+      <li><a href="/">Lifestyle</a></li>
+      <li><a href="/">Viagem & Gastronomia</a></li>
+      <li><a href="/">Auto</a></li>
+      <li><a href="/">Educação</a></li>
+      <li><a href="/">CNN Talks</a></li>
+      <li><a href="/">Fórum CNN</a></li>
+      <li><a href="/">Blogs CNN</a></li>
+      <li><a href="/">Colunas CNN</a></li>
+      <li><a href="/">Programação</a></li>
+      <li><a href="/">Equipes CNN Brasil</a></li>
+      <li><a href="/">Newsletters</a></li>
+      <li><a href="/">Sobre a CNN</a></li>
+      <li><a href="/">Política de Privacidade</a></li>
+      <li><a href="/">Termos de Uso</a></li>
+      <li><a href="/">Fale com a CNN</a></li>
+      <li><a href="/">Distribuição do Sinal</a></li>
+      <li><a href="/">Faça parte da Equipe CNN</a></li>
+    </ul>
+  </nav>
+  <!-- Início Menú suspenso-->
+  <!--FIM DO HEADER + MENU SUSPENSO-->
+
+  <div class="ads-container">
+    <div class="ads">
+      <div class="slider">
+        <a href="https://www.cnnbrasil.com.br/ww/">
+          <img src="/public/assets/images/ads/11.PNG" alt="Image 1">
+        </a>
+        <a href="https://codans.com.br/android-matricula/">
+          <img src="/public/assets/images/ads/22.png" alt="Image 2">
+        </a>
+        <a href="https://example.com/page3">
+          <img src="/public/assets/images/ads/33.PNG" alt="Image 3">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="games-wrapper">
+      <button class="nav left" onclick="scrollGames(-1)"><i class="fas fa-arrow-left"></i></button>
       <section class="games">
-      <section class="game-data">
-        <ul class="game-score">
-          <li>
-            <div class="game-status">
-              <span>Copa do Brasil 2025</span>
-              <!-- <div class="score-status"></div> -->
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/apc.png" alt="Tottenham Logo" width="32px" height="32px"
-              <p>APC</p>
+        <section class="game-data">
+          <ul class="game-score">
+            <li>
+              <div class="game-status">
+                <span>Copa do Brasil 2025</span>
+                <!-- <div class="score-status"></div> -->
               </div>
-              <p>1</p>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/flu.png" alt="Manchester United Logo" width="32px" height="32px">
-              <p>FLU</p>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/apc.png" alt="Tottenham Logo" width="32px" height="32px" <p>APC
+                  </p>
+                </div>
+                <p>1</p>
               </div>
-              <p>4</p>
-            </div>
-        
-            <div class="game-follow-up">
-              <p class="game-date">21/05</p>
-              <span>Veja como foi <i class="fas fa-arrow-right"></i></span>
-            </div>
-          </li>
-          <li>
-            <div class="game-status">
-              <span>UEFA Europa League 2024/2025</span>
-              <div class="score-status"></div>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px"
-              <p>TOT</p>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/flu.png" alt="Manchester United Logo" width="32px"
+                    height="32px">
+                  <p>FLU</p>
+                </div>
+                <p>4</p>
               </div>
-              <p>1</p>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px" height="32px">
-              <p>MNU</p>
+
+              <div class="game-follow-up">
+                <p class="game-date">21/05</p>
+                <span>Veja como foi <i class="fas fa-arrow-right"></i></span>
               </div>
-              <p>0</p>
-            </div>
-        
-            <div class="game-follow-up">
-              <p class="game-date">21/05</p>
-              <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
-            </div>
-          </li>
-                    <li>
-            <div class="game-status">
-              <span>Copa do Brasil 2025</span>
-              <div class="score-status"></div>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/cor.png" alt="Tottenham Logo" width="32px" height="32px"
-              <p>COR</p>
+            </li>
+            <li>
+              <div class="game-status">
+                <span>UEFA Europa League 2024/2025</span>
+                <div class="score-status"></div>
               </div>
-              <p>0</p>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/nov.png" alt="Manchester United Logo" width="32px" height="32px">
-              <p>NOV</p>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px" <p>TOT
+                  </p>
+                </div>
+                <p>1</p>
               </div>
-              <p>0</p>
-            </div>
-        
-            <div class="game-follow-up">
-              <p class="game-date">21/05</p>
-              <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
-            </div>
-          </li>
-                    <li>
-            <div class="game-status">
-              <span>UEFA Europa League 2024/2025</span>
-              <div class="score-status"></div>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px"
-              <p>TOT</p>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px"
+                    height="32px">
+                  <p>MNU</p>
+                </div>
+                <p>0</p>
               </div>
-              <p>1</p>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px" height="32px">
-              <p>MNU</p>
+
+              <div class="game-follow-up">
+                <p class="game-date">21/05</p>
+                <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
               </div>
-              <p>0</p>
-            </div>
-        
-            <div class="game-follow-up">
-              <p class="game-date">21/05</p>
-              <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
-            </div>
-          </li>
-                    <li>
-            <div class="game-status">
-              <span>UEFA Europa League 2024/2025</span>
-              <div class="score-status"></div>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px"
-              <p>TOT</p>
+            </li>
+            <li>
+              <div class="game-status">
+                <span>Copa do Brasil 2025</span>
+                <div class="score-status"></div>
               </div>
-              <p>1</p>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px" height="32px">
-              <p>MNU</p>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/cor.png" alt="Tottenham Logo" width="32px" height="32px" <p>COR
+                  </p>
+                </div>
+                <p>0</p>
               </div>
-              <p>0</p>
-            </div>
-        
-            <div class="game-follow-up">
-              <p class="game-date">21/05</p>
-              <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
-            </div>
-          </li>
-          <li>
-            <div class="game-status">
-              <span>UEFA Europa League 2024/2025</span>
-              <div class="score-status"></div>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px"
-              <p>TOT</p>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/nov.png" alt="Manchester United Logo" width="32px"
+                    height="32px">
+                  <p>NOV</p>
+                </div>
+                <p>0</p>
               </div>
-              <p>1</p>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px" height="32px">
-              <p>MNU</p>
+
+              <div class="game-follow-up">
+                <p class="game-date">21/05</p>
+                <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
               </div>
-              <p>0</p>
-            </div>
-        
-            <div class="game-follow-up">
-              <p class="game-date">21/05</p>
-              <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
-            </div>
-          </li>
-          <li>
-            <div class="game-status">
-              <span>UEFA Europa League 2024/2025</span>
-              <div class="score-status"></div>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px"
-              <p>TOT</p>
+            </li>
+            <li>
+              <div class="game-status">
+                <span>UEFA Europa League 2024/2025</span>
+                <div class="score-status"></div>
               </div>
-              <p>1</p>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px" height="32px">
-              <p>MNU</p>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px" <p>TOT
+                  </p>
+                </div>
+                <p>1</p>
               </div>
-              <p>0</p>
-            </div>
-        
-            <div class="game-follow-up">
-              <p class="game-date">21/05</p>
-              <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
-            </div>
-          </li>
-          <li>
-            <div class="game-status">
-              <span>UEFA Europa League 2024/2025</span>
-              <div class="score-status"></div>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px"
-              <p>TOT</p>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px"
+                    height="32px">
+                  <p>MNU</p>
+                </div>
+                <p>0</p>
               </div>
-              <p>1</p>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px" height="32px">
-              <p>MNU</p>
+
+              <div class="game-follow-up">
+                <p class="game-date">21/05</p>
+                <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
               </div>
-              <p>0</p>
-            </div>
-        
-            <div class="game-follow-up">
-              <p class="game-date">21/05</p>
-              <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
-            </div>
-          </li>
-          <li>
-            <div class="game-status">
-              <span>UEFA Europa League 2024/2025</span>
-              <div class="score-status"></div>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px"
-              <p>TOT</p>
+            </li>
+            <li>
+              <div class="game-status">
+                <span>UEFA Europa League 2024/2025</span>
+                <div class="score-status"></div>
               </div>
-              <p>1</p>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px" height="32px">
-              <p>MNU</p>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px" <p>TOT
+                  </p>
+                </div>
+                <p>1</p>
               </div>
-              <p>0</p>
-            </div>
-        
-            <div class="game-follow-up">
-              <p class="game-date">21/05</p>
-              <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
-            </div>
-          </li>
-          <li>
-            <div class="game-status">
-              <span>UEFA Europa League 2024/2025</span>
-              <div class="score-status"></div>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px"
-              <p>TOT</p>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px"
+                    height="32px">
+                  <p>MNU</p>
+                </div>
+                <p>0</p>
               </div>
-              <p>1</p>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px" height="32px">
-              <p>MNU</p>
+
+              <div class="game-follow-up">
+                <p class="game-date">21/05</p>
+                <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
               </div>
-              <p>0</p>
-            </div>
-        
-            <div class="game-follow-up">
-              <p class="game-date">21/05</p>
-              <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
-            </div>
-          </li>
-          <li>
-            <div class="game-status">
-              <span>UEFA Europa League 2024/2025</span>
-              <div class="score-status"></div>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px"
-              <p>TOT</p>
+            </li>
+            <li>
+              <div class="game-status">
+                <span>UEFA Europa League 2024/2025</span>
+                <div class="score-status"></div>
               </div>
-              <p>1</p>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px" height="32px">
-              <p>MNU</p>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px" <p>TOT
+                  </p>
+                </div>
+                <p>1</p>
               </div>
-              <p>0</p>
-            </div>
-        
-            <div class="game-follow-up">
-              <p class="game-date">21/05</p>
-              <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
-            </div>
-          </li>
-          <li>
-            <div class="game-status">
-              <span>UEFA Europa League 2024/2025</span>
-              <div class="score-status"></div>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px"
-              <p>TOT</p>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px"
+                    height="32px">
+                  <p>MNU</p>
+                </div>
+                <p>0</p>
               </div>
-              <p>1</p>
-            </div>
-         
-            <div class="score">
-              <div class="team">
-              <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px" height="32px">
-              <p>MNU</p>
+
+              <div class="game-follow-up">
+                <p class="game-date">21/05</p>
+                <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
               </div>
-              <p>0</p>
-            </div>
-        
-            <div class="game-follow-up">
-              <p class="game-date">21/05</p>
-              <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
-            </div>
-          </li>
-        </ul>
-      </section>
+            </li>
+            <li>
+              <div class="game-status">
+                <span>UEFA Europa League 2024/2025</span>
+                <div class="score-status"></div>
+              </div>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px" <p>TOT
+                  </p>
+                </div>
+                <p>1</p>
+              </div>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px"
+                    height="32px">
+                  <p>MNU</p>
+                </div>
+                <p>0</p>
+              </div>
+
+              <div class="game-follow-up">
+                <p class="game-date">21/05</p>
+                <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </li>
+            <li>
+              <div class="game-status">
+                <span>UEFA Europa League 2024/2025</span>
+                <div class="score-status"></div>
+              </div>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px" <p>TOT
+                  </p>
+                </div>
+                <p>1</p>
+              </div>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px"
+                    height="32px">
+                  <p>MNU</p>
+                </div>
+                <p>0</p>
+              </div>
+
+              <div class="game-follow-up">
+                <p class="game-date">21/05</p>
+                <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </li>
+            <li>
+              <div class="game-status">
+                <span>UEFA Europa League 2024/2025</span>
+                <div class="score-status"></div>
+              </div>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px" <p>TOT
+                  </p>
+                </div>
+                <p>1</p>
+              </div>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px"
+                    height="32px">
+                  <p>MNU</p>
+                </div>
+                <p>0</p>
+              </div>
+
+              <div class="game-follow-up">
+                <p class="game-date">21/05</p>
+                <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </li>
+            <li>
+              <div class="game-status">
+                <span>UEFA Europa League 2024/2025</span>
+                <div class="score-status"></div>
+              </div>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px" <p>TOT
+                  </p>
+                </div>
+                <p>1</p>
+              </div>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px"
+                    height="32px">
+                  <p>MNU</p>
+                </div>
+                <p>0</p>
+              </div>
+
+              <div class="game-follow-up">
+                <p class="game-date">21/05</p>
+                <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </li>
+            <li>
+              <div class="game-status">
+                <span>UEFA Europa League 2024/2025</span>
+                <div class="score-status"></div>
+              </div>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px" <p>TOT
+                  </p>
+                </div>
+                <p>1</p>
+              </div>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px"
+                    height="32px">
+                  <p>MNU</p>
+                </div>
+                <p>0</p>
+              </div>
+
+              <div class="game-follow-up">
+                <p class="game-date">21/05</p>
+                <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </li>
+            <li>
+              <div class="game-status">
+                <span>UEFA Europa League 2024/2025</span>
+                <div class="score-status"></div>
+              </div>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/tot.png" alt="Tottenham Logo" width="32px" height="32px" <p>TOT
+                  </p>
+                </div>
+                <p>1</p>
+              </div>
+
+              <div class="score">
+                <div class="team">
+                  <img src="/public/assets/images/times/mnu.png" alt="Manchester United Logo" width="32px"
+                    height="32px">
+                  <p>MNU</p>
+                </div>
+                <p>0</p>
+              </div>
+
+              <div class="game-follow-up">
+                <p class="game-date">21/05</p>
+                <span>Acompanhe <i class="fas fa-arrow-right"></i></span>
+              </div>
+            </li>
+          </ul>
+        </section>
       </section>
       <button class="nav right" onclick="scrollGames(1)"><i class="fas fa-arrow-right"></i></button>
-      </section>
-      
-      <main class="news-wrapper">
-        <div class="divider"></div>
-        <section class="highlights">
-  	      <div class="badge">
-            <span>EXCLUSIVO</span>
-          </div>
-          
-          <ul class="news-list">
-            <h1><a href="#">Model Context Protocol (MCP) revoluciona integração de IAs com dados externos</a></h1>
-            <li>
+    </section>
+
+    <main class="news-wrapper">
+      <div class="divider"></div>
+      <section class="highlights">
+        <div class="badge">
+          <span>EXCLUSIVO</span>
+        </div>
+
+        <ul class="news-list">
+          <h1><a href="#">Model Context Protocol (MCP) revoluciona integração de IAs com dados externos</a></h1>
+          <li>
             <a href="#">
               <div class="chev-r">
-              <i class="fas fa-chevron-right"></i>
+                <i class="fas fa-chevron-right"></i>
               </div>
               O novo padrão aberto proposto pela Anthropic está ganhando espaço entre grandes empresas.
             </a>
-            </li>
-            <li>
+          </li>
+          <li>
             <a href="#">
               <div class="chev-r">
-              <i class="fas fa-chevron-right"></i>
+                <i class="fas fa-chevron-right"></i>
               </div>
               Model Context Protocol (MCP) vem sendo considerado um divisor de águas na arquitetura de sistemas de IA.
             </a>
-            </li>
-            <li>
+          </li>
+          <li>
             <a href="#">
               <div class="chev-r">
-              <i class="fas fa-chevron-right"></i>
+                <i class="fas fa-chevron-right"></i>
               </div>
               Empresas como Atlassian e OpenAI também adotaram a tecnologia.
-              </li>
-            </a>
-            </li>
-          </ul>
-          
-          <section class="highlights-articles">
-            <div class="highlights-container">
-              <hr class="highlights-divider" />
-              <div class="main-articles">
-            <article class="highlights-article">
-              <h2>Jorge e Jamilton trocam o teclado pela colher de pau e viram chefs da codança</h2>
-              <img src="/public/assets/images/news/news1.png" alt="noticia 1">
-            	<ul class="news-list">
-            <li>
-            <a href="#">
-              <div class="chev-r">
-              <i class="fas fa-chevron-right"></i>
-              </div>
-              Tudo começou como uma simples atividade: o desafio "Culinária Criativa", proposto aos seus alunos. O que ninguém esperava era que Jorge e Jamilton fossem os mais impactados pela brincadeira.
-            </a>
-            </li>
-            <li>
-            <a href="#">
-              <div class="chev-r">
-              <i class="fas fa-chevron-right"></i>
-              </div>
-              Depois de anos debugando código e resolvendo bugs cabeludos, Jorge e Jamilton decidiram subir um novo tipo de stack: o de panquecas. A dupla, conhecida por seus commits afiados e deploys de última hora, agora testa receitas no VSKitchen.
-            </a>
-            </li>
-            <li>
-            <a href="#">
-              <div class="chev-r">
-              <i class="fas fa-chevron-right"></i>
-              </div>
-              "Descobrimos que fritar pastel também tem lógica: se não der certo, dá pra refatorar com mais óleo", disse Jamilton, enquanto Jorge criava um sistema de versionamento para receitas com git merge de ingredientes.
-            </a>
-            </li>
-            <li>
-            <a href="#">
-              <div class="chev-r">
-              <i class="fas fa-chevron-right"></i>
-              </div>
-            Agora, em seu novo projeto "Codança na Cozinha", a dupla ensina como preparar pratos como “Lasanha em Camadas MVC”, “Arroz à DevOps” e “Torta Recursiva”.
-            </a>
-            </li>
-            </ul>
-            <hr>
-            </article>
-            <article class="highlights-article">
-              <h2>Estágio na área de tech? Prepare-se para encarar o anjinho e o diabinho...</h2>
-              <img src="/public/assets/images/news/news2.png" alt="noticia 1">
-            	<ul class="news-list">
-            <li>
-            <a href="#">
-              <div class="chev-r">
-              <i class="fas fa-chevron-right"></i>
-              </div>
-             No processo de seleção dos novos estagiários, tudo parecia seguir como planejado — até Fábio, veterano da casa, decidir reviver uma dinâmica lendária da sua antiga empresa: o “anjinho e diabinho do código”.
-            </a>
-            </li>
-            <li>
-            <a href="#">
-              <div class="chev-r">
-              <i class="fas fa-chevron-right"></i>
-              </div>
-              <span>
-              A ideia era simples: enquanto o anjinho incentivava os canditato ao estagiários com frases como <i>“seu código tá ótimo, manda ver!”</i>, o diabinho… bem, ele nem precisava falar. Com apenas um olhar fixo, braços cruzados e um leve levantar de sobrancelha, três candidatos fecharam o notebook e disseram “obrigado pela oportunidade”.
-              </span>
-            </a>
-            </li>
-            <li>
-            <a href="#">
-              <div class="chev-r">
-              <i class="fas fa-chevron-right"></i>
-              </div>
-              
-              “Foi só ele aparecer atrás do notebook, de braços cruzados, e encarar o VS Code aberto com uma sobrancelha arqueada. O clima já ficou pesado”, relatou um dos estagiários sobreviventes.
-            </a>
-            </li>
-            <li>
-            <a href="#">
-              <div class="chev-r">
-              <i class="fas fa-chevron-right"></i>
-              </div>
-              <span>
-            Apesar do leve trauma, a dinâmica virou tradição no programa de estágio. Agora, os novatos aprendem desde cedo uma importante lição:<strong>confiança no código é importante.</strong>
-            </span>
-            </a>
-            </li>
-            </ul>
-            <hr>
-            </article>
-            
-            <article class="highlights-article">
-              <h2>Microsoft anuncia integração nativa do Copilot com o Windows 11 a partir de junho</h2>
-              <img src="/public/assets/images/news/news3.png" alt="noticia 3">
-            	<ul class="news-list">
-            <li>
-            <a href="#">
-              <div class="chev-r">
-              <i class="fas fa-chevron-right"></i>
-              </div>
-             A Microsoft anunciou que, a partir de junho, o Copilot — assistente de IA da empresa — passará a ser integrado de forma nativa ao Windows 11.
-            </a>
-            </li>
-            <li>
-            <a href="#">
-              <div class="chev-r">
-              <i class="fas fa-chevron-right"></i>
-              </div>
-              <span>
-              Copilot será acessível por meio de um atalho no teclado (Win + C) e terá integração com aplicativos como Word, Excel, Edge e até o Explorador de Arquivos. A promessa é que a IA ofereça respostas contextualizadas com base no que o usuário estiver fazendo, como resumos de documentos, explicações de configurações do sistema e até automação de tarefas comuns.
-              </span>
-            </a>
-            </li>
-            <li>
-            <a href="#">
-              <div class="chev-r">
-              <i class="fas fa-chevron-right"></i>
-              </div>
-              
-              Essa iniciativa faz parte da estratégia da Microsoft de consolidar a inteligência artificial como um componente central de seus produtos, alinhando-se com outras ações como a incorporação do GPT-4 no Bing e nas ferramentas do Microsoft 365.
-            </a>
-            </li>
-            <li>
-            <a href="#">
-              <div class="chev-r">
-              <i class="fas fa-chevron-right"></i>
-              </div>
-              <span>
-            A atualização será liberada de forma gradual, começando pelos usuários da versão comercial do Windows 11 e membros do programa Insider.
-            </span>
-            </a>
-            </li>
-            </ul>
-            <hr>
-            </article>
+          </li>
+          </a>
+          </li>
+        </ul>
+
+        <section class="highlights-articles">
+          <div class="highlights-container">
+            <hr class="highlights-divider" />
+            <div class="main-articles">
+              <article class="highlights-article">
+                <h2>Jorge e Jamilton trocam o teclado pela colher de pau e viram chefs da codança</h2>
+                <img src="/public/assets/images/news/news1.png" alt="noticia 1">
+                <ul class="news-list">
+                  <li>
+                    <a href="#">
+                      <div class="chev-r">
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+                      Tudo começou como uma simples atividade: o desafio "Culinária Criativa", proposto aos seus alunos.
+                      O que ninguém esperava era que Jorge e Jamilton fossem os mais impactados pela brincadeira.
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="chev-r">
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+                      Depois de anos debugando código e resolvendo bugs cabeludos, Jorge e Jamilton decidiram subir um
+                      novo tipo de stack: o de panquecas. A dupla, conhecida por seus commits afiados e deploys de
+                      última hora, agora testa receitas no VSKitchen.
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="chev-r">
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+                      "Descobrimos que fritar pastel também tem lógica: se não der certo, dá pra refatorar com mais
+                      óleo", disse Jamilton, enquanto Jorge criava um sistema de versionamento para receitas com git
+                      merge de ingredientes.
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="chev-r">
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+                      Agora, em seu novo projeto "Codança na Cozinha", a dupla ensina como preparar pratos como “Lasanha
+                      em Camadas MVC”, “Arroz à DevOps” e “Torta Recursiva”.
+                    </a>
+                  </li>
+                </ul>
+                <hr>
+              </article>
+              <article class="highlights-article">
+                <h2>Estágio na área de tech? Prepare-se para encarar o anjinho e o diabinho...</h2>
+                <img src="/public/assets/images/news/news2.png" alt="noticia 1">
+                <ul class="news-list">
+                  <li>
+                    <a href="#">
+                      <div class="chev-r">
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+                      No processo de seleção dos novos estagiários, tudo parecia seguir como planejado — até Fábio,
+                      veterano da casa, decidir reviver uma dinâmica lendária da sua antiga empresa: o “anjinho e
+                      diabinho do código”.
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="chev-r">
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+                      <span>
+                        A ideia era simples: enquanto o anjinho incentivava os canditato ao estagiários com frases como
+                        <i>“seu código tá ótimo, manda ver!”</i>, o diabinho… bem, ele nem precisava falar. Com apenas
+                        um olhar fixo, braços cruzados e um leve levantar de sobrancelha, três candidatos fecharam o
+                        notebook e disseram “obrigado pela oportunidade”.
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="chev-r">
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+
+                      “Foi só ele aparecer atrás do notebook, de braços cruzados, e encarar o VS Code aberto com uma
+                      sobrancelha arqueada. O clima já ficou pesado”, relatou um dos estagiários sobreviventes.
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="chev-r">
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+                      <span>
+                        Apesar do leve trauma, a dinâmica virou tradição no programa de estágio. Agora, os novatos
+                        aprendem desde cedo uma importante lição:<strong>confiança no código é importante.</strong>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+                <hr>
+              </article>
+
+              <article class="highlights-article">
+                <h2>Microsoft anuncia integração nativa do Copilot com o Windows 11 a partir de junho</h2>
+                <img src="/public/assets/images/news/news3.png" alt="noticia 3">
+                <ul class="news-list">
+                  <li>
+                    <a href="#">
+                      <div class="chev-r">
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+                      A Microsoft anunciou que, a partir de junho, o Copilot — assistente de IA da empresa — passará a
+                      ser integrado de forma nativa ao Windows 11.
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="chev-r">
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+                      <span>
+                        Copilot será acessível por meio de um atalho no teclado (Win + C) e terá integração com
+                        aplicativos como Word, Excel, Edge e até o Explorador de Arquivos. A promessa é que a IA ofereça
+                        respostas contextualizadas com base no que o usuário estiver fazendo, como resumos de
+                        documentos, explicações de configurações do sistema e até automação de tarefas comuns.
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="chev-r">
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+
+                      Essa iniciativa faz parte da estratégia da Microsoft de consolidar a inteligência artificial como
+                      um componente central de seus produtos, alinhando-se com outras ações como a incorporação do GPT-4
+                      no Bing e nas ferramentas do Microsoft 365.
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="chev-r">
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+                      <span>
+                        A atualização será liberada de forma gradual, começando pelos usuários da versão comercial do
+                        Windows 11 e membros do programa Insider.
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+                <hr>
+              </article>
             </div>
             <div class="secondary-news">
-            <article class="secondary-article">
-            <img src="/public/assets/images/news/news4.gif" alt="noticia 4">
-            <h3>OpenAI lança GPT-4o, modelo mais rápido e com entrada multimodal gratuita</h3>
-            </article>
-            <hr>
-            <article class="secondary-article">
-            <img src="/public/assets/images/news/news5.png" alt="noticia 5">
-            <h3>Google anuncia novo sistema operacional para dispositivos de IA: Axion</h3>
-            </article>            
-            <hr>
-            <article class="secondary-article">
-            <img src="/public/assets/images/news/news6.png" alt="noticia 6">
-            <h3>Meta libera ferramenta open-source para treinamento de grandes modelos de linguagem</h3>
-            </article>
+              <article class="secondary-article">
+                <img src="/public/assets/images/news/news4.gif" alt="noticia 4">
+                <h3>OpenAI lança GPT-4o, modelo mais rápido e com entrada multimodal gratuita</h3>
+              </article>
+              <hr>
+              <article class="secondary-article">
+                <img src="/public/assets/images/news/news5.png" alt="noticia 5">
+                <h3>Google anuncia novo sistema operacional para dispositivos de IA: Axion</h3>
+              </article>
+              <hr>
+              <article class="secondary-article">
+                <img src="/public/assets/images/news/news6.png" alt="noticia 6">
+                <h3>Meta libera ferramenta open-source para treinamento de grandes modelos de linguagem</h3>
+              </article>
             </div>
-            </div>
-            
-          </section>
+          </div>
+
         </section>
-        <section class="live-news">
-          <div class="tabs">
+      </section>
+      <section class="live-news">
+        <div class="tabs">
           <button class="tab-button active brasil" onclick="switchTab('brasil')">
             <div class="status-live active"></div>
             <span>CNN BRASIL</span>
@@ -667,52 +701,56 @@
           <button class="tab-button money" onclick="switchTab('money')"><span>CNN MONEY</span></button>
         </div>
         <div id="video-brasil" class="video-container switch">
-          <iframe src="https://www.youtube.com/embed/35gAxaEcmT8" title="CNN Brasil" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/35gAxaEcmT8" title="CNN Brasil" frameborder="0"
+            allowfullscreen></iframe>
         </div>
         <div id="video-money" class="video-container switch" style="display: none;">
-          <iframe src="https://www.youtube.com/embed/kSLgJGWiUu8" title="CNN Money" frameborder="0" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/kSLgJGWiUu8" title="CNN Money" frameborder="0"
+            allowfullscreen></iframe>
         </div>
         <p class="news-title brasil">WW - Assista à programação ao vivo da CNN Brasil</p>
         <p class="news-title money" style="display: none;">CNN MONEY - Assista à programação ao vivo da CNN Money</p>
         <div class="news-items">
           <div class="background"></div>
           <div class="news-items-wrapper">
-          <div class="news-item">
-            <img src="/public/assets/images/news/news5.png" alt="Notícia imagem">
-            <p class="news-2">Conheça a música de 1962 que obteve 10 bilhões de visualizações no TikTok</p>
+            <div class="news-item">
+              <img src="/public/assets/images/news/news5.png" alt="Notícia imagem">
+              <p class="news-2">Conheça a música de 1962 que obteve 10 bilhões de visualizações no TikTok</p>
+            </div>
           </div>
-          </div>
-          
+
         </div>
-          <div class="carousel-dots">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-          </div>
-          <div id="tips" class="video-container">
-          <iframe src="https://www.youtube.com/embed/o8NiE3XMPrM" title="Dicas para programação FullStack" frameborder="0" allowfullscreen></iframe>
+        <div class="carousel-dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
         </div>
-      <p class="news-title-dev">Google I/O 2025: as tendências que vão moldar o futuro da tecnologia</p>
-      
-          <div id="tips" class="video-container">
-          <iframe src="https://www.youtube.com/embed/HZHHBwzmJLk" title="Animações CSS em 100 segundos" frameborder="0" allowfullscreen></iframe>
+        <div id="tips" class="video-container">
+          <iframe src="https://www.youtube.com/embed/o8NiE3XMPrM" title="Dicas para programação FullStack"
+            frameborder="0" allowfullscreen></iframe>
         </div>
-      <p class="news-title-dev">CSS Animation explicado em 100 segundos — rápido e direto!</p>
-        
-        </section>
-        
-      </main>
-      <div class="secondary-news full">
+        <p class="news-title-dev">Google I/O 2025: as tendências que vão moldar o futuro da tecnologia</p>
+
+        <div id="tips" class="video-container">
+          <iframe src="https://www.youtube.com/embed/HZHHBwzmJLk" title="Animações CSS em 100 segundos" frameborder="0"
+            allowfullscreen></iframe>
+        </div>
+        <p class="news-title-dev">CSS Animation explicado em 100 segundos — rápido e direto!</p>
+
+      </section>
+
+    </main>
+    <div class="secondary-news full">
       <article class="secondary-article full">
         <img src="/public/assets/images/news/news8.png" alt="noticia 4">
         <h3>Heart intelligence: por que profissionais de TI devem olhar para ela?</h3>
       </article>
-      
+
       <article class="secondary-article full">
         <img src="/public/assets/images/news/news7.png" alt="noticia 5">
         <h3>O que você precisa saber antes de migrar de carreira para a área de TI?</h3>
-      </article>            
-      
+      </article>
+
       <article class="secondary-article full">
         <img src="/public/assets/images/news/news9.png" alt="noticia 6">
         <h3>Salário em dólar sem sair do Brasil: quem são os global workers da tecnologia</h3>
@@ -721,75 +759,79 @@
         <img src="/public/assets/images/news/news10.png" alt="noticia 4">
         <h3>Está realmente mais difícil preencher as vagas na área de tecnologia?</h3>
       </article>
-      </div>
-      <h2 class="dev-title">Desenvolvedores</h2>
-      <div class="developers">
+    </div>
+    <h2 class="dev-title">Desenvolvedores</h2>
+    <div class="developers">
       <div class="dev-info-container">
         <img src="/public/assets/images/authors/alessandro.jpg" alt="noticia 4" width="100px" height="100px">
         <div class="dev-info">
-        <h3>Alessandro Almeida</h3>
-        <div class="dev-socials">
-        <a href="https://www.linkedin.com/in/alessandro-almeida-877684165" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a>
-        <a href="https://github.com/Lordohm" target="_blank"><i class="fab fa-github github"></i></a>
-        </div>
+          <h3>Alessandro Almeida</h3>
+          <div class="dev-socials">
+            <a href="https://www.linkedin.com/in/alessandro-almeida-877684165" target="_blank"><i
+                class="fab fa-linkedin-in linkedin"></i></a>
+            <a href="https://github.com/Lordohm" target="_blank"><i class="fab fa-github github"></i></a>
+          </div>
         </div>
       </div>
       <div class="dev-info-container">
         <img src="/public/assets/images/authors/giarlan.png" alt="noticia 4" width="100px" height="100px">
         <div class="dev-info">
-        <h3>Giarlan Santana</h3>
-        <div class="dev-socials">
-        <a href="" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a>
-        <a href="" target="_blank"><i class="fab fa-github github"></i></a>
-        </div>
+          <h3>Giarlan Santana</h3>
+          <div class="dev-socials">
+            <a href="" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a>
+            <a href="" target="_blank"><i class="fab fa-github github"></i></a>
+          </div>
         </div>
       </div>
       <div class="dev-info-container">
         <img src="/public/assets/images/authors/miyata.jpg" alt="noticia 4" width="100px" height="100px">
         <div class="dev-info">
-        <h3>Guilherme Miyata</h3>
-        <div class="dev-socials">
-        <a href="https://www.linkedin.com/in/g-miyata/" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a>
-        <a href="https://github.com/g-Miyata" target="_blank"><i class="fab fa-github github"></i></a>
-        </div>
+          <h3>Guilherme Miyata</h3>
+          <div class="dev-socials">
+            <a href="https://www.linkedin.com/in/g-miyata/" target="_blank"><i
+                class="fab fa-linkedin-in linkedin"></i></a>
+            <a href="https://github.com/g-Miyata" target="_blank"><i class="fab fa-github github"></i></a>
+          </div>
         </div>
       </div>
       <div class="dev-info-container">
         <img src="/public/assets/images/authors/jefferson.png" alt="noticia 4" width="100px" height="100px">
         <div class="dev-info">
-        <h3>Jefferson Cabral</h3>
-        <div class="dev-socials">
-        <a href="" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a>
-        <a href="" target="_blank"><i class="fab fa-github github"></i></a>
-        </div>
+          <h3>Jefferson Cabral</h3>
+          <div class="dev-socials">
+            <a href="" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a>
+            <a href="" target="_blank"><i class="fab fa-github github"></i></a>
+          </div>
         </div>
       </div>
       <div class="dev-info-container">
         <img src="/public/assets/images/authors/marcel.png" alt="noticia 4" width="100px" height="100px">
         <div class="dev-info">
-        <h3>Marcel Ferreira</h3>
-        <div class="dev-socials">
-        <a href="http://www.linkedin.com/in/marcelfcampos" target="_blank"><i class="fab fa-linkedin-in linkedin"></i></a>
-        <a href="https://github.com/marcelfcampos" target="_blank"><i class="fab fa-github github"></i></a>
-        </div>
+          <h3>Marcel Ferreira</h3>
+          <div class="dev-socials">
+            <a href="http://www.linkedin.com/in/marcelfcampos" target="_blank"><i
+                class="fab fa-linkedin-in linkedin"></i></a>
+            <a href="https://github.com/marcelfcampos" target="_blank"><i class="fab fa-github github"></i></a>
+          </div>
         </div>
       </div>
-      </div>
-      
     </div>
-    <footer>
-      <div class="footer-container">
-        <section class="footer-wrapper">
-          <div>
-        <a href="./index.html"><img src="../../public/assets/logo-images/logo-cnn.png" alt="logo CNN" width="66px" /></a>
+
+  </div>
+  <footer>
+    <div class="footer-container">
+      <section class="footer-wrapper">
+        <div>
+          <a href="./index.html"><img src="../../public/assets/logo-images/logo-cnn.png" alt="logo CNN"
+              width="66px" /></a>
         </div>
 
         <section class="footer-links">
-        <p class="footer-slogan">
-          CNN Brasil.
-          <br />
-          Pense bem, pense CNN.
-        </p>
+          <p class="footer-slogan">
+            CNN Brasil.
+            <br />
+            Pense bem, pense CNN.
+          </p>
           <hr />
           <a href="./live.html" class="footer-live-link">
             <div class="footer-live">
@@ -950,17 +992,16 @@
               <li><a href="#">Mapa do Site</a></li>
               <li><a href="#">Distribuição do Sinal</a></li>
             </ul>
-            <hr class="footer-mobile"/>
+            <hr class="footer-mobile" />
           </section>
           <section class="footer-social-media-links">
             <h4>CNN NAS REDES</h4>
             <div class="footer-social-icons">
               <a href="#">
-                <svg class="footer-inter-icon" xmlns="http://www.w3.org/2000/svg" viewBox="33 133 40 39" fill="currentColor">
-                  <path
-                    fill="currentColor"
-                    d="m 33.171652,171.55096 v -0.7728 h 10.20326 c 5.611788,0 10.215223,-0.0193 10.229855,-0.0431 0.0146,-0.0237 0.0426,-0.1636 0.06213,-0.31095 l 0.03556,-0.26791 -0.551988,-0.11233 c -0.303596,-0.0618 -1.763166,-0.3639 -3.243493,-0.67135 -5.340296,-1.10917 -13.061066,-2.70916 -14.470177,-2.99869 -1.768196,-0.3633 -1.838547,-0.38094 -1.839594,-0.46116 -0.0018,-0.13668 0.34026,-2.03873 0.373697,-2.07807 0.0194,-0.0228 1.70026,0.31785 3.73523,0.75708 2.034971,0.43922 6.53854,1.41126 10.007938,2.16007 3.469393,0.74882 6.327525,1.36149 6.351409,1.36149 0.06157,0 0.225762,-0.75437 0.174381,-0.80118 -0.02338,-0.0213 -4.287586,-1.87999 -9.476059,-4.13046 -5.188479,-2.25049 -9.449976,-4.10613 -9.469995,-4.12366 -0.0313,-0.0274 0.710425,-2.16268 0.772965,-2.22523 0.0125,-0.0125 4.276876,1.76807 9.476402,3.95681 5.19952,2.18874 9.491175,3.9901 9.537003,4.00303 0.05518,0.0156 0.149036,-0.0755 0.277969,-0.26967 l 0.194645,-0.29316 -1.716991,-1.27356 c -8.355078,-6.19728 -15.053412,-11.17492 -15.110744,-11.22902 -0.05639,-0.0532 0.08276,-0.3059 0.737716,-1.33995 0.443956,-0.70092 0.834966,-1.30264 0.868922,-1.33718 0.04716,-0.048 0.629903,0.36167 2.464392,1.73216 1.321461,0.98722 5.082322,3.79759 8.357468,6.24526 3.275151,2.44767 5.974915,4.45031 5.99948,4.45031 0.02459,0 0.15393,-0.14842 0.287474,-0.32983 l 0.242806,-0.32984 -5.155533,-6.54549 c -2.835547,-3.60003 -5.807992,-7.37294 -6.605435,-8.38426 -0.797443,-1.01131 -1.448997,-1.85074 -1.447888,-1.86539 0.0052,-0.0709 3.153578,-2.56462 3.209524,-2.54231 0.03544,0.0142 2.990471,3.6008 6.566712,7.97036 3.576236,4.36956 6.519348,7.94575 6.540248,7.94709 0.04987,0.003 0.56591,-0.43909 0.570995,-0.48939 0.0023,-0.0213 -1.653627,-4.25446 -3.679523,-9.40694 -2.025897,-5.15248 -3.739419,-9.5151 -3.807821,-9.69469 l -0.124367,-0.32655 2.294808,-0.96883 c 1.26215,-0.53286 2.30028,-0.96152 2.306959,-0.95259 0.0067,0.009 1.625622,4.28535 3.597655,9.50314 1.972033,5.21779 3.590509,9.49261 3.59661,9.49961 0.0061,0.007 0.141284,-0.029 0.300398,-0.0799 l 0.289298,-0.0927 0.01345,-10.53951 0.01345,-10.53951 h 3.677371 3.677371 v 19.50676 19.50675 H 53.344622 33.171652 Z"
-                  />
+                <svg class="footer-inter-icon" xmlns="http://www.w3.org/2000/svg" viewBox="33 133 40 39"
+                  fill="currentColor">
+                  <path fill="currentColor"
+                    d="m 33.171652,171.55096 v -0.7728 h 10.20326 c 5.611788,0 10.215223,-0.0193 10.229855,-0.0431 0.0146,-0.0237 0.0426,-0.1636 0.06213,-0.31095 l 0.03556,-0.26791 -0.551988,-0.11233 c -0.303596,-0.0618 -1.763166,-0.3639 -3.243493,-0.67135 -5.340296,-1.10917 -13.061066,-2.70916 -14.470177,-2.99869 -1.768196,-0.3633 -1.838547,-0.38094 -1.839594,-0.46116 -0.0018,-0.13668 0.34026,-2.03873 0.373697,-2.07807 0.0194,-0.0228 1.70026,0.31785 3.73523,0.75708 2.034971,0.43922 6.53854,1.41126 10.007938,2.16007 3.469393,0.74882 6.327525,1.36149 6.351409,1.36149 0.06157,0 0.225762,-0.75437 0.174381,-0.80118 -0.02338,-0.0213 -4.287586,-1.87999 -9.476059,-4.13046 -5.188479,-2.25049 -9.449976,-4.10613 -9.469995,-4.12366 -0.0313,-0.0274 0.710425,-2.16268 0.772965,-2.22523 0.0125,-0.0125 4.276876,1.76807 9.476402,3.95681 5.19952,2.18874 9.491175,3.9901 9.537003,4.00303 0.05518,0.0156 0.149036,-0.0755 0.277969,-0.26967 l 0.194645,-0.29316 -1.716991,-1.27356 c -8.355078,-6.19728 -15.053412,-11.17492 -15.110744,-11.22902 -0.05639,-0.0532 0.08276,-0.3059 0.737716,-1.33995 0.443956,-0.70092 0.834966,-1.30264 0.868922,-1.33718 0.04716,-0.048 0.629903,0.36167 2.464392,1.73216 1.321461,0.98722 5.082322,3.79759 8.357468,6.24526 3.275151,2.44767 5.974915,4.45031 5.99948,4.45031 0.02459,0 0.15393,-0.14842 0.287474,-0.32983 l 0.242806,-0.32984 -5.155533,-6.54549 c -2.835547,-3.60003 -5.807992,-7.37294 -6.605435,-8.38426 -0.797443,-1.01131 -1.448997,-1.85074 -1.447888,-1.86539 0.0052,-0.0709 3.153578,-2.56462 3.209524,-2.54231 0.03544,0.0142 2.990471,3.6008 6.566712,7.97036 3.576236,4.36956 6.519348,7.94575 6.540248,7.94709 0.04987,0.003 0.56591,-0.43909 0.570995,-0.48939 0.0023,-0.0213 -1.653627,-4.25446 -3.679523,-9.40694 -2.025897,-5.15248 -3.739419,-9.5151 -3.807821,-9.69469 l -0.124367,-0.32655 2.294808,-0.96883 c 1.26215,-0.53286 2.30028,-0.96152 2.306959,-0.95259 0.0067,0.009 1.625622,4.28535 3.597655,9.50314 1.972033,5.21779 3.590509,9.49261 3.59661,9.49961 0.0061,0.007 0.141284,-0.029 0.300398,-0.0799 l 0.289298,-0.0927 0.01345,-10.53951 0.01345,-10.53951 h 3.677371 3.677371 v 19.50676 19.50675 H 53.344622 33.171652 Z" />
                 </svg>
               </a>
               <a><i class="fab fa-x-twitter twitter"></i></a>
@@ -974,158 +1015,159 @@
             </div>
             <hr class="footer-desktop">
           </section>
-          </section>
-          <section class="footer-main-links-desktop">
-            <section class="footer-content-links-desktop">
-              <h4>EDITORIAS</h4>
-              <ul class="footer-links-list">
-                <li><a href="./live.html">Ao Vivo</a></li>
-                <li><a href="./policy.html">Política</a></li>
-                <li><a href="#">Nacional</a></li>
-                <li><a href="#">Economia</a></li>
-                <li><a href="#">Internacional</a></li>
-                <li><a href="#">Entretenimento</a></li>
-                <li><a href="./sports.html">Esportes</a></li>
-                <li><a href="#">Saúde</a></li>
-                <li><a href="#">Tecnologia</a></li>
-                <li><a href="#">Viagem & Gastronomia</a></li>
-                <li><a href="#">Auto</a></li>
-                <li><a href="#">LifeStyle</a></li>
-              </ul>
-            </section>
-              <section class="footer-content-links-desktop">
-                <h4>POLÍTICA</h4>
-              <ul class="footer-links-list">
-                <li><a href="#">Índice CNN</a></li>
-                <li><a href="#">Governo Lula</a></li>
-                <li><a href="#">Câmara dos Deputados</a></li>
-                <li><a href="#">Senado Federal</a></li>
-                <li><a href="#">Supremo Tribunal Federal</a></li>
-                <li><a href="#">Políticas Públicas</a></li>
-              </ul>
-
-            </section>
-                        <section class="footer-content-links-desktop">
-              <h4>NACIONAL</h4>
-              <ul class="footer-links-list">
-                <li><a href="#">Educação</a></li>
-                <li><a href="#">Segurança</a></li>
-                <li><a href="#">Clima</a></li>
-                <li><a href="#">Meio Ambiente</a></li>
-                <li><a href="#">Auxílio Brasil</a></li>
-                <li><a href="#">São Paulo</a></li>
-                <li><a href="#">Rio de Janeiro</a></li>
-                <li><a href="#">Minas Gerais</a></li>
-                <li><a href="#">Brasília</a></li>
-              </ul>
-            </section>
-              <section class="footer-content-links-desktop">
-              <h4>ECONOMIA</h4>
-              <ul class="footer-links-list">
-                <li><a href="#">Mercado</a></li>
-                <li><a href="#">Investimentos</a></li>
-                <li><a href="#">Banco Central</a></li>
-                <li><a href="#">Bolsa de Valores</a></li>
-                <li><a href="#">Imposto de Renda</a></li>
-                <li><a href="#">Finanças Pessoais</a></li>
-                <li><a href="#">Loterias</a></li>
-                <li><a href="#">Sustentabilidade</a></li>
-              </ul>
-            </section>
-            <section class="footer-content-links-desktop">
-              <h4>INTERNACIONAL</h4>
-              <ul class="footer-links-list">
-                <li><a href="#">Guerra na Ucrânia</a></li>
-                <li><a href="#">Guerra em Israel</a></li>
-                <li><a href="#">Estados Unidos</a></li>
-                <li><a href="#">Europa</a></li>
-                <li><a href="#">Ásia</a></li>
-                <li><a href="#">África</a></li>
-                <li><a href="#">Oriente Médio</a></li>
-                <li><a href="#">Rússia</a></li>
-                <li><a href="#">China</a></li>
-              </ul>
-            </section>
-              <section class="footer-content-links-desktop">
-              <h4>ENTRETENIMENTO</h4>
-              <ul class="footer-links-list">
-                <li><a href="#">Big Brother Brasil</a></li>
-                <li><a href="#">Celebridades</a></li>
-                <li><a href="#">Cinema</a></li>
-                <li><a href="#">Televisão</a></li>
-                <li><a href="#">Streaming</a></li>
-                <li><a href="#">Shows</a></li>
-                <li><a href="#">Carnaval 2024</a></li>
-                <li><a href="#">Música</a></li>
-                <li><a href="#">Horóscopo</a></li>
-              </ul>
-            </section>
-                        <section class="footer-content-links-desktop">
-              <h4>ESPORTES</h4>
-              <ul class="footer-links-list">
-                <li><a href="#">Agenda de Jogos</a></li>
-                <li><a href="#">Tabela Brasileirão Série A</a></li>
-                <li><a href="#">Tabela Brasileirão Série B</a></li>
-                <li><a href="#">Tabela Eliminatórias 2026</a></li>
-                <li><a href="#">Copa Libertadores da América</a></li>
-                <li><a href="#">Olimpíadas</a></li>
-                <li><a href="#">Basquete</a></li>
-                <li><a href="#">Vôlei</a></li>
-                <li><a href="#">Automobilismo</a></li>
-                <li><a href="#">Golf</a></li>
-                <li><a href="#">e-Sports</a></li>
-              </ul>
-            </section>
-
-                        <section class="footer-content-links-desktop">
-              <h4>SAÚDE</h4>
-              <ul class="footer-links-list">
-                <li><a href="#">Roberto Kalil - Sinais Vitais</a></li>
-                <li><a href="#">Alimentação</a></li>
-                <li><a href="#">Exercícios Físicos</a></li>
-                <li><a href="#">Vacinação</a></li>
-                <li><a href="#">Câncer</a></li>
-                <li><a href="#">Drogas</a></li>
-                <li><a href="#">Obesidade</a></li>
-              </ul>
-            </section>
-                        <section class="footer-content-links-desktop">
-              <h4>TECNOLOGIA</h4>
-              <ul class="footer-links-list">
-                <li><a href="#">Inteligência Artificial</a></li>
-                <li><a href="#">Nasa</a></li>
-                <li><a href="#">Ciência</a></li>
-                <li><a href="#">Curiosidades</a></li>
-              </ul>
-            </section>
-                        <section class="footer-content-links-desktop">
-              <h4>VIAGEM & GASTRONOMIA</h4>
-              <ul class="footer-links-list">
-                <li><a href="#">Viagem</a></li>
-                <li><a href="#">Gastronomia</a></li>
-              </ul>
-            </section>
-            </section>
-          </section>
-          <div class="footer-bottom"></div>
-          <section class="footer-links-info">
+        </section>
+        <section class="footer-main-links-desktop">
+          <section class="footer-content-links-desktop">
+            <h4>EDITORIAS</h4>
             <ul class="footer-links-list">
-              <li><a href="#">Sobre CNN Brasil</a></li>
-              <li><a href="#">Aviso Legal e Política de Privacidade</a></li>
-              <li><a href="#">Termos de Uso</a></li>
-              <li><a href="#">Fale com a CNN</a></li>
-              <li><a href="#">Faça parte da Equipe CNN</a></li>
+              <li><a href="./live.html">Ao Vivo</a></li>
+              <li><a href="./policy.html">Política</a></li>
+              <li><a href="#">Nacional</a></li>
+              <li><a href="#">Economia</a></li>
+              <li><a href="#">Internacional</a></li>
+              <li><a href="#">Entretenimento</a></li>
+              <li><a href="./sports.html">Esportes</a></li>
+              <li><a href="#">Saúde</a></li>
+              <li><a href="#">Tecnologia</a></li>
+              <li><a href="#">Viagem & Gastronomia</a></li>
+              <li><a href="#">Auto</a></li>
+              <li><a href="#">LifeStyle</a></li>
             </ul>
           </section>
-          <section class="footer-copyright">
-            <span>&copy; 2025 Cable News Network Brasil. Uma empresa NOVUS MÍDIA. Todos os direitos reservados.</span>
+          <section class="footer-content-links-desktop">
+            <h4>POLÍTICA</h4>
+            <ul class="footer-links-list">
+              <li><a href="#">Índice CNN</a></li>
+              <li><a href="#">Governo Lula</a></li>
+              <li><a href="#">Câmara dos Deputados</a></li>
+              <li><a href="#">Senado Federal</a></li>
+              <li><a href="#">Supremo Tribunal Federal</a></li>
+              <li><a href="#">Políticas Públicas</a></li>
+            </ul>
+
+          </section>
+          <section class="footer-content-links-desktop">
+            <h4>NACIONAL</h4>
+            <ul class="footer-links-list">
+              <li><a href="#">Educação</a></li>
+              <li><a href="#">Segurança</a></li>
+              <li><a href="#">Clima</a></li>
+              <li><a href="#">Meio Ambiente</a></li>
+              <li><a href="#">Auxílio Brasil</a></li>
+              <li><a href="#">São Paulo</a></li>
+              <li><a href="#">Rio de Janeiro</a></li>
+              <li><a href="#">Minas Gerais</a></li>
+              <li><a href="#">Brasília</a></li>
+            </ul>
+          </section>
+          <section class="footer-content-links-desktop">
+            <h4>ECONOMIA</h4>
+            <ul class="footer-links-list">
+              <li><a href="#">Mercado</a></li>
+              <li><a href="#">Investimentos</a></li>
+              <li><a href="#">Banco Central</a></li>
+              <li><a href="#">Bolsa de Valores</a></li>
+              <li><a href="#">Imposto de Renda</a></li>
+              <li><a href="#">Finanças Pessoais</a></li>
+              <li><a href="#">Loterias</a></li>
+              <li><a href="#">Sustentabilidade</a></li>
+            </ul>
+          </section>
+          <section class="footer-content-links-desktop">
+            <h4>INTERNACIONAL</h4>
+            <ul class="footer-links-list">
+              <li><a href="#">Guerra na Ucrânia</a></li>
+              <li><a href="#">Guerra em Israel</a></li>
+              <li><a href="#">Estados Unidos</a></li>
+              <li><a href="#">Europa</a></li>
+              <li><a href="#">Ásia</a></li>
+              <li><a href="#">África</a></li>
+              <li><a href="#">Oriente Médio</a></li>
+              <li><a href="#">Rússia</a></li>
+              <li><a href="#">China</a></li>
+            </ul>
+          </section>
+          <section class="footer-content-links-desktop">
+            <h4>ENTRETENIMENTO</h4>
+            <ul class="footer-links-list">
+              <li><a href="#">Big Brother Brasil</a></li>
+              <li><a href="#">Celebridades</a></li>
+              <li><a href="#">Cinema</a></li>
+              <li><a href="#">Televisão</a></li>
+              <li><a href="#">Streaming</a></li>
+              <li><a href="#">Shows</a></li>
+              <li><a href="#">Carnaval 2024</a></li>
+              <li><a href="#">Música</a></li>
+              <li><a href="#">Horóscopo</a></li>
+            </ul>
+          </section>
+          <section class="footer-content-links-desktop">
+            <h4>ESPORTES</h4>
+            <ul class="footer-links-list">
+              <li><a href="#">Agenda de Jogos</a></li>
+              <li><a href="#">Tabela Brasileirão Série A</a></li>
+              <li><a href="#">Tabela Brasileirão Série B</a></li>
+              <li><a href="#">Tabela Eliminatórias 2026</a></li>
+              <li><a href="#">Copa Libertadores da América</a></li>
+              <li><a href="#">Olimpíadas</a></li>
+              <li><a href="#">Basquete</a></li>
+              <li><a href="#">Vôlei</a></li>
+              <li><a href="#">Automobilismo</a></li>
+              <li><a href="#">Golf</a></li>
+              <li><a href="#">e-Sports</a></li>
+            </ul>
+          </section>
+
+          <section class="footer-content-links-desktop">
+            <h4>SAÚDE</h4>
+            <ul class="footer-links-list">
+              <li><a href="#">Roberto Kalil - Sinais Vitais</a></li>
+              <li><a href="#">Alimentação</a></li>
+              <li><a href="#">Exercícios Físicos</a></li>
+              <li><a href="#">Vacinação</a></li>
+              <li><a href="#">Câncer</a></li>
+              <li><a href="#">Drogas</a></li>
+              <li><a href="#">Obesidade</a></li>
+            </ul>
+          </section>
+          <section class="footer-content-links-desktop">
+            <h4>TECNOLOGIA</h4>
+            <ul class="footer-links-list">
+              <li><a href="#">Inteligência Artificial</a></li>
+              <li><a href="#">Nasa</a></li>
+              <li><a href="#">Ciência</a></li>
+              <li><a href="#">Curiosidades</a></li>
+            </ul>
+          </section>
+          <section class="footer-content-links-desktop">
+            <h4>VIAGEM & GASTRONOMIA</h4>
+            <ul class="footer-links-list">
+              <li><a href="#">Viagem</a></li>
+              <li><a href="#">Gastronomia</a></li>
+            </ul>
           </section>
         </section>
-        
-      </div>
-    </footer>
-    <script src="/src/scripts/mobile-navbar.js"></script>
-    <script src="/src/scripts/carousel.js"></script>
-    <script src="/src/scripts/videos.js"></script>
-  </body>
+      </section>
+      <div class="footer-bottom"></div>
+      <section class="footer-links-info">
+        <ul class="footer-links-list">
+          <li><a href="#">Sobre CNN Brasil</a></li>
+          <li><a href="#">Aviso Legal e Política de Privacidade</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">Fale com a CNN</a></li>
+          <li><a href="#">Faça parte da Equipe CNN</a></li>
+        </ul>
+      </section>
+      <section class="footer-copyright">
+        <span>&copy; 2025 Cable News Network Brasil. Uma empresa NOVUS MÍDIA. Todos os direitos reservados.</span>
+      </section>
+      </section>
+
+    </div>
+  </footer>
+  <script src="/src/scripts/mobile-navbar.js"></script>
+  <script src="/src/scripts/carousel.js"></script>
+  <script src="/src/scripts/videos.js"></script>
+</body>
+
 </html>
