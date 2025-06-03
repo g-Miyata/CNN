@@ -12,6 +12,14 @@ ul {
     list-style: none;
 }
 
+picture>img {
+    margin-right: 1rem;
+}
+
+div.video-info p {
+    padding-top: 0.8rem;
+}
+
 
 .grid-container {
     display: grid;
@@ -19,9 +27,26 @@ ul {
     gap: 20px;
 }
 
+.grid-container>h1+div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.description-video {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
 
 .grid-item {
+    padding: px;
     align-items: center;
+}
+
+picture.grid-item {
+    /* align-items: flex-start; */
+    margin-left: 0;
 }
 
 .header-main {
@@ -30,6 +55,11 @@ ul {
 
 .flex {
     display: flex;
+}
+
+.flex-end {
+    flex-direction: row;
+    align-items: center;
 }
 
 .title {
@@ -93,9 +123,14 @@ main {
     padding: 2rem;
 }
 
+.video-box {
+    padding: 1.5rem 1.5rem 0 0;
+}
+
 .video-section {
     flex: 3;
     margin: 1rem;
+    max-width: 60%;
 }
 
 .video-section iframe {
@@ -110,6 +145,18 @@ main {
     margin-top: 10px;
     background: white;
     padding: 15px;
+    border-radius: 8px;
+}
+
+section.video-info {
+    gap: 1rem;
+}
+
+
+
+.video-config {
+    width: 350px;
+    height: 200px;
     border-radius: 8px;
 }
 
@@ -140,11 +187,37 @@ main {
 }
 
 .scroll {
-    display: flex;
+    /* display: flex; */
     gap: 8px;
     overflow-x: auto;
     white-space: nowrap;
     padding: 8px
+}
+
+.scroll-button {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 5px;
+    border: 0;
+    border-radius: 99999px;
+}
+
+button.scroll-button:hover {
+    background: lightgray;
+}
+
+#nav-container {
+    display: flex;
+    overflow: hidden;
+    width: auto;
+    border: 1px solid #ccc;
+    /* scroll suave para todos os scrolls manuais */
+    scroll-behavior: smooth;
+}
+
+.item {
+    justify-content: center;
+    flex-shrink: 1;
 }
 
 @media (max-width: 640px) {

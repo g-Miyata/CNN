@@ -36,7 +36,7 @@
         </div>
       </header>
 
-      <nav class="scroll">
+      <nav class="flex scroll">
         <button class="tab-button active" data-video="https://www.youtube.com/embed/35gAxaEcmT8">Ao Vivo</button>
         <button class="tab-button" data-video="https://www.youtube.com/embed/A66BMS7qZj0?si=csbNpdlPMW2ZiOsy">CNN
           Esportes</button>
@@ -47,41 +47,150 @@
         <button class="tab-button" data-video="https://www.youtube.com/embed/kSLgJGWiUu8">CNN Money</button>
       </nav>
 
+      <main class="video-box">
+        <section class="video-section">
+          <iframe id="main-video" src="https://www.youtube.com/embed/35gAxaEcmT8" frameborder="0" allowfullscreen>
+          </iframe>
+        </section>
+
+        <aside class="sidebar">
+          <h3>Últimas Notícias</h3>
+          <ul>
+            <li><a href="https://www.youtube.com/embed/ScMzIvxBSi4" target="main-video">Análise: Planalto evita
+                “carapuça”...</a></li>
+            <li><a href="https://www.youtube.com/embed/kXYiU_JCYtU" target="main-video">Trump intensifica críticas a
+                Putin</a></li>
+            <li><a href="https://www.youtube.com/embed/tgbNymZ7vqY" target="main-video">Pinguins retornam ao mar</a>
+            </li>
+            <li><a href="https://www.youtube.com/embed/jfKfPfyJRdk" target="main-video">EUA anunciam sanções</a></li>
+          </ul>
+        </aside>
+      </main>
+
+      <div class="video-info description-video">
+        <div class="flex">
+          <picture>
+            <img src="/public/assets/images/live/CNN360.png" alt="CNN 360º">
+          </picture>
+          <!-- <h2>CNN 360º</h2> -->
+          <p>
+            Todos os ângulos das notícias mais importantes do dia com atualizações, debates e apurações em tempo
+            real.
+          </p>
+        </div>
+        <div>
+          <p><strong>Apresentação:</strong> Débora Bergamasco e Iuri Pitta</p>
+          <p><strong>Seg - Sex:</strong> 15h</p>
+        </div>
+      </div>
+
+    </section>
+    <nav class="grid-container">
+      <h1>CNN Esportes</h1>
       <div>
-        <main class="">
-          <section class="video-section">
-            <iframe id="main-video" src="https://www.youtube.com/embed/35gAxaEcmT8" frameborder="0"
-              allowfullscreen></iframe>
-            <div class="video-info">
-              <h2>CNN 360º</h2>
-              <p>Todos os ângulos das notícias mais importantes do dia com atualizações, debates e apurações em tempo
-                real.</p>
-              <p><strong>Apresentação:</strong> Débora Bergamasco e Iuri Pitta</p>
-              <p><strong>Seg - Sex:</strong> 15h</p>
-            </div>
-          </section>
+        <button id="botaoAnterior" class="scroll-button"><img src="/public/assets/images/live/arrow-left.svg"
+            alt=""></button>
+        <button id="botaoProximo" class="scroll-button"><img src="/public/assets/images/live/arrow-right.svg"
+            alt=""></button>
+      </div>
+    </nav>
 
-          <aside class="sidebar">
-            <h3>Últimas Notícias</h3>
-            <ul>
-              <li><a href="https://www.youtube.com/embed/ScMzIvxBSi4" target="main-video">Análise: Planalto evita
-                  “carapuça”...</a></li>
-              <li><a href="https://www.youtube.com/embed/kXYiU_JCYtU" target="main-video">Trump intensifica críticas a
-                  Putin</a></li>
-              <li><a href="https://www.youtube.com/embed/tgbNymZ7vqY" target="main-video">Pinguins retornam ao mar</a>
-              </li>
-              <li><a href="https://www.youtube.com/embed/jfKfPfyJRdk" target="main-video">EUA anunciam sanções</a></li>
-            </ul>
-          </aside>
-        </main>
+    <section id="nav-container" class="video-info">
+      <div class="item">
+        <iframe class="video-config" src="https://www.youtube.com/embed/xoJF7lnDfJs?si=jnjb8NO9vlpgkwAp"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+        <div>
+          <h4>CNN Esportes</h4>
+          <p>Entrevista com Rodrigo Caetano, diretor de seleções da CBF | CNN ESPORTES S/A</p>
+        </div>
+      </div>
+      <div class="item">
+        <iframe class="video-config" src="https://www.youtube.com/embed/ffQrHHRTnb4?si=XG9WQxyB92gFMFL0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
 
+        <div class="item">
+          <h4>CNN Esportes</h4>
+          <p>Domingol com Benja - 01/06/2025</p>
+        </div>
+      </div>
+      <div class="item">
+        <iframe class="video-config" src="https://www.youtube.com/embed/Xz0_XGrD6UY?si=BWnnsb3EInxRXyf0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+
+        <div>
+          <h4>CNN Esportes</h4>
+          <p>
+            AO VIVO: Entrevista com João Paulo, presidente do Botafogo | CNN ESPORTES S/A - 03/05/2025
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <iframe class="video-config" src="https://www.youtube.com/embed/isguSm8-PKk?si=yNmTL1jxbE9ycdfW"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+
+        <div>
+          <h4>CNN Esportes</h4>
+          <p>
+            Duas pessoas morrem e mais de 500 são presas em festa por título
+            do PSG | AGORA CNN
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <iframe class="video-config" src="https://www.youtube.com/embed/TigemoecaSg?si=Hk8kzRlOrKgApFrk"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+
+        <div>
+          <h4>CNN Esportes</h4>
+          <p>Domingol com Benja - 25/05/2025</p>
+        </div>
+      </div>
+      <div class="item">
+        <iframe class="video-config" src="https://www.youtube.com/embed/PQzu0bedgF8?si=zUAW73pkqLI3nRjT"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+
+        <div>
+          <h4>CNN Esportes</h4>
+          <p>
+            Corinthians vive o pior momento da sua história,
+            avalia Benja | DOMINGOL
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <iframe class="video-config" src="https://www.youtube.com/embed/TVcyASxqhjI?si=iN0z6udt7INX4ICn"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+
+        <div>
+          <h4>CNN Esportes</h4>
+          <p>
+            CBF inicia planejamento para Copa do Mundo de 2026,
+            afirma Rodrigo Caetano | CNN ESPORTES S/A
+          </p>
+        </div>
       </div>
     </section>
-
-    <div>
-      <h2>Últimas Notícias</h2>
-    </div>
-
 
   </div>
   <footer>
@@ -432,6 +541,7 @@
     </div>
   </footer>
   <script src="/src/scripts/live-navbar.js"></script>
+  <script src="/src/scripts/scroll-view.js"></script>
 
 </body>
 
