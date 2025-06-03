@@ -66,7 +66,17 @@ picture.grid-item {
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 2rem;
+    margin-top: 1rem;
 }
+
+.title>img {
+    width: 1.5rem;
+}
+
+.title>h3 {
+    font-size: 1.3rem;
+}
+
 
 .search-box {
     align-items: center;
@@ -122,19 +132,15 @@ nav.grid-container {
     margin: 1.5rem 0;
 }
 
-main {
+main.video-box {
     display: flex;
-    padding: 2rem;
-}
-
-.video-box {
-    padding: 1.5rem 1.5rem 0 0;
+    padding: 1.5rem 1.5rem 0 0
 }
 
 .video-section {
     flex: 3;
     margin: 1rem;
-    max-width: 60%;
+    min-width: 60%;
 }
 
 .video-section iframe {
@@ -166,28 +172,28 @@ section.video-info {
 
 .sidebar {
     flex: 1;
+    padding: 0 1rem;
+    margin: 0;
+    /* display: flex; */
+    flex-direction: column;
+    overflow-y: auto;
+    height: 380px;
+    width: auto;
+    /* border: 1px solid lightsgrey; */
+    scroll-behavior: smooth;
 }
 
-.sidebar h3 {
-    margin-bottom: 10px;
+.sidebar div.flex {
+    margin: 1rem;
 }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
+.sidebar span {
+    margin: 0 1rem;
 }
 
-.sidebar li {
-    margin-bottom: 10px;
-}
-
-.sidebar a {
-    color: #000;
-    text-decoration: none;
-}
-
-.sidebar a:hover {
-    text-decoration: underline;
+.sidebar .video-config {
+    width: 180px;
+    height: 100px;
 }
 
 .scroll {
